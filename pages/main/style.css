@@ -5,12 +5,11 @@
 body {
     font-family: 'Roboto';
     background: #E5E5E5;
-
+    margin: 0;
 }
 
 .container {
     display: flex;
-    justify-content: space-between;
     align-items: center;
     color: white;
 }
@@ -45,9 +44,8 @@ header a:target {
     width: 82px;
     height: 52px;
     left: 220px;
-    margin-right: 40px;
     margin-top: 14px;
-    padding: 4.75px 3.55px;
+    padding: 3.75px 3.55px;
 
     font-style: normal;
     font-weight: 400;
@@ -71,11 +69,9 @@ header a:target {
     top: 23.64px;
 }
 nav {
-
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 140%;
+    position: relative;
+    left: 184px;
+    top: 1px;
 }
 
 nav ul {
@@ -85,15 +81,18 @@ nav ul {
     list-style: none;
     color: white;
     text-indent: 58px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 140%;
 }
 
 .copyright {
+    position: relative;
     width: 105px;
     height: 22px;
-    top: 29px;
-    margin-right: 208px;
-
-    font-family: 'Roboto';
+    left: 625px;
+    top: 1px;
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
