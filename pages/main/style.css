@@ -1,0 +1,100 @@
+:root {
+    --color-green: #4B9200;
+    --color-orange: 
+}
+body {
+    font-family: 'Roboto';
+    background: #E5E5E5;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+header {
+    width: 1600px;
+    margin: 0 auto;
+    height: 80px;
+    background: #000000;
+    backdrop-filter: blur(2px);
+}
+header a {
+    text-decoration: none;
+    color: white;
+}
+header a:active {
+    /* selected link */
+    color: orange;
+}
+header a:focus {
+    color: orange;
+}
+header a:target {
+    color: orange;
+}
+
+
+.logo {
+    text-align: center;
+    box-sizing: border-box;
+    position: relative;
+    width: 82px;
+    height: 52px;
+    left: 220px;
+    margin-top: 14px;
+    padding: 3.75px 3.55px;
+
+    font-style: normal;
+    font-weight: 400;
+    font-size: 19px;
+    line-height: 120%;
+    /* or 23px */
+
+    text-align: center;
+
+    color: #FFFFFF;
+
+    border: 1.18841px solid #FFFFFF;
+}
+.logo a {
+    color: white;
+    text-decoration: none;
+}
+.logo img {
+    position: absolute;
+    left: 9.23px;
+    top: 23.64px;
+}
+nav {
+    position: relative;
+    left: 184px;
+    top: 1px;
+}
+
+nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    list-style: none;
+    color: white;
+    text-indent: 58px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 140%;
+}
+
+.copyright {
+    position: relative;
+    width: 105px;
+    height: 22px;
+    left: 625px;
+    top: 1px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 140%;
+}
