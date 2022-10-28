@@ -4,7 +4,7 @@
 }
 body {
     font-family: 'Roboto';
-    background: #E5E5E5;
+    background: white;
     margin: 0;
 }
 
@@ -18,7 +18,7 @@ header {
     width: 1600px;
     margin: 0 auto;
     height: 80px;
-    background: #000000;
+    background: black;
     backdrop-filter: blur(2px);
 }
 header a {
@@ -36,7 +36,6 @@ header a:target {
     color: orange;
 }
 
-
 .logo {
     text-align: center;
     box-sizing: border-box;
@@ -51,7 +50,6 @@ header a:target {
     font-weight: 400;
     font-size: 19px;
     line-height: 120%;
-    /* or 23px */
 
     text-align: center;
 
@@ -97,4 +95,77 @@ nav ul {
     font-weight: 500;
     font-size: 16px;
     line-height: 140%;
+}
+
+/* section panda */
+.panda {
+    width: 1600px;
+    height: 700px;
+    background-image: url("/online-zoo/assets/images/giant_panda.jpeg");
+    background-size: cover;
+    background-position: center -222px;
+}
+
+.ellipse6 {
+    position: absolute;
+    top: 92px;
+    left: calc(59.1% - 465px / 2 + 239.5px);
+    width: 465px;
+    height: 465px;
+    background: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
+    border-radius: 50%;
+}
+
+.panda h2 {
+    position: absolute;
+    width: 500.31px;
+    height: 400px;
+    left: calc(59.1% - 500.31px/2 + 330.15px);
+    top: 166px;
+    margin: 0;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 104.5px;
+    line-height: 77%;
+    letter-spacing: 1px;
+
+    text-align: center;
+    text-transform: uppercase;
+
+    color: #FFFFFF;
+
+}
+.panda strong {
+    color: #FFEE2E;
+    letter-spacing: 3px;
+}
+
+.panda button {
+    position: absolute;
+    width: 298px;
+    height: 54px;
+    left: calc(59.1% - 298px/2 + 332px);
+    top: 626px;
+    background: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
+    border-radius: 25px;
+    border: 0;
+
+    color: white;
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 140%;
+    text-transform: uppercase;
+}
+.panda button:hover{
+    background: #E47209;
+}
+
+.panda button:active {
+    background: #4B9200;
+}
+.panda button:disabled {
+    background: #767474;
 }
