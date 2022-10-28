@@ -1,1 +1,1 @@
-RS School 4 weeks task https://DmirtyUsov.github.io/online-zoo/
+RS School 4 weeks task [PetStory-online](https://DmirtyUsov.github.io/online-zoo/pages/main)
