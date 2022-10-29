@@ -206,7 +206,7 @@ nav ul {
     width: 1160px;
     margin-top: 140px;
     margin-bottom: 0;
-    margin-left: 219px;
+    margin-left: 220px;
     margin-right: 0;
     display: flex;
 }
@@ -239,4 +239,41 @@ nav ul {
     top: 792px;
     background-image: url("/online-zoo/assets/images/flower_foto1.png");
     background-size: auto;
+}
+
+/* section animals-cards */
+.animals-cards {
+    width: 1160px;
+    margin-top: 140px;
+    margin-bottom: 0;
+    margin-left: 220px;
+    margin-right: 0;
+    display: flex;
+}
+
+.foto-card {
+    box-sizing: border-box;
+    width: 366px;
+    height: 426px;
+    border-radius: 5px;
+    border: 1px solid;
+    border-color: #FE9013;
+    /*border-image: linear-gradient(113.96deg, #FA6F32 1.49%, #FE9013 101.44%);
+*/
+}
+.foto-card img{
+    box-sizing: border-box;
+    width: 364px;
+    margin-left: auto;
+    margin-right: auto;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.icon-fruits {
+    position: relative;
+    left: 321px;
+    top: 376 px;
+    width: 35px;
+    height: 37px;
+    background-image: url("/online-zoo/assets/icons/banana-bamboo_icon.png");
 }
