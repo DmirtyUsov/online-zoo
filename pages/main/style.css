@@ -32,6 +32,28 @@ p {
     /* or 22px */
     color: #333B41;
 }
+button {
+    background: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
+    border-radius: 25px;
+    border: 0;
+
+    color: white;
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 140%;
+    text-transform: uppercase;
+}
+button:hover{
+    background: #E47209;
+}
+
+button:active {
+    background: #4B9200;
+}
+button:disabled {
+    background: #767474;
+}
 
 body {
     font-family: 'Roboto';
@@ -179,26 +201,7 @@ nav ul {
     height: 54px;
     left: calc(59.1% - 298px/2 + 332px);
     top: 626px;
-    background: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
     border-radius: 25px;
-    border: 0;
-
-    color: white;
-    font-family: 'Roboto';
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 140%;
-    text-transform: uppercase;
-}
-.panda button:hover{
-    background: #E47209;
-}
-
-.panda button:active {
-    background: #4B9200;
-}
-.panda button:disabled {
-    background: #767474;
 }
 
 /* section backstage */
@@ -244,11 +247,16 @@ nav ul {
 /* section animals-cards */
 .animals-cards {
     width: 1160px;
-    margin-top: 140px;
+    margin-top: 178px;
     margin-bottom: 0;
     margin-left: 220px;
     margin-right: 0;
     display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px 31px;
 }
 
 .foto-card {
@@ -262,18 +270,111 @@ nav ul {
 */
 }
 .foto-card img{
+    position: relative;
     box-sizing: border-box;
     width: 364px;
+    height: 366px;
     margin-left: auto;
     margin-right: auto;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
 }
+
+.btn {
+    position: relative;
+    width: 294px;
+    height: 22px;
+    left: 16px;
+    top: 5px;
+    /* btn. */
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 140%;
+    /* or 22px */
+
+    text-transform: uppercase;
+
+    color: #000000;
+}
+.small-paragraph {
+    position: relative;
+    width: 294px;
+    height: 18px;
+    left: 15px;
+    top: 3px;
+    /* smallParagraph */
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 120%;
+    /* identical to box height, or 18px */
+    color: #000000;
+}
 .icon-fruits {
     position: relative;
+    margin: 0;
     left: 321px;
-    top: 376 px;
-    width: 35px;
+    top: -33px;
+    width: 33px;
     height: 37px;
     background-image: url("/online-zoo/assets/icons/banana-bamboo_icon.png");
+    background-repeat: no-repeat;
+}
+.icon-meat {
+    position: relative;
+    margin: 0;
+    left: 310px;
+    top: -33px;
+    width: 48px;
+    height: 38px;
+    background-image: url("/online-zoo/assets/icons/meet-fish_icon.png");
+    background-repeat: no-repeat;
+}
+
+.animals-cards button {
+    position:relative;
+    width: 298px;
+    height: 54px;
+    margin-top: 61px;
+}
+.button-arrow {
+    width: 62px;
+    height: 62px;
+    border-radius: 50%;
+}
+
+.button-left {
+    position: absolute;
+    left: 138px;
+    top: 1906px;
+}
+
+.button-right {
+    position: absolute;
+    left: 1398px;
+    top: 1906px;
+}
+
+.palm-foto {
+    position: absolute;
+    width: 880px;
+    height: 460px;
+    left: -588px;
+    top: 2149px;
+    background-image: url("/online-zoo/assets/images/palm.png");
+    background-size: cover;
+}
+
+.strelitzia-photo {
+    position: absolute;
+    width: 368px;
+    height: 275px;
+    left: 1232px;
+    top: 2334px;
+    background-image: url("/online-zoo/assets/images/strelitzia.png");
+    transform: matrix(-1, 0, 0, 1, 0, 0);
+    background-size: contain;
 }
