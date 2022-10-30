@@ -12,6 +12,17 @@ h2 {
     color: #333B41;
 }
 
+h3 {
+    /* h3 */
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 36px;
+line-height: 130%;
+/* identical to box height, or 47px */
+color: #000000;
+}
+
 h4 {
     /* subtitle */
     font-family: 'Roboto';
@@ -24,14 +35,28 @@ h4 {
 }
 
 p {
+/* body */
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 140%;
+/* or 22px */
+color: #000000;
+}
+
+small {
+    /* smallParagraph */
     font-family: 'Roboto';
     font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 140%;
-    /* or 22px */
-    color: #333B41;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 120%;
+    /* identical to box height, or 18px */
+    color: #000000;
 }
+
 button {
     background: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
     border-radius: 25px;
@@ -248,7 +273,7 @@ nav ul {
 .animals-cards {
     width: 1160px;
     margin-top: 178px;
-    margin-bottom: 0;
+    margin-bottom: 99px;
     margin-left: 220px;
     margin-right: 0;
     display: flex;
@@ -377,4 +402,87 @@ nav ul {
     background-image: url("/online-zoo/assets/images/strelitzia.png");
     transform: matrix(-1, 0, 0, 1, 0, 0);
     background-size: contain;
+}
+
+/* section peek and feed */
+.peek-and-feed {
+    position: relative;
+    width: 1600px;
+    height: 1004px;
+    background: linear-gradient(315.75deg, rgba(254, 210, 144, 0.7) 30.06%, #FEBDAB 100.95%, rgba(254, 210, 144, 0.7) 106.36%), linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%), linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%);
+}
+
+.peek-and-feed section {
+    position: relative;
+    top: 69px;
+    box-sizing: border-box;
+    width: 1160px;
+    height: 835px;
+    margin-left: auto;
+    margin-right: auto;
+    background: rgba(253, 253, 255, 0.52);
+    backdrop-filter: blur(2px);
+    /* Note: backdrop-filter has minimal browser support */
+    border-radius: 20px;
+}
+.peek-and-feed h2 {
+    text-align: center;
+    padding-top: 41px;
+    color: #FE9013;
+}
+.peek-and-feed h3 {
+    margin-top: 51px;
+    text-align: center;
+}
+.peek-and-feed h4 {
+    margin-top: 30px;
+    margin-left: 99px;
+}
+.peek-and-feed p {
+    margin-left: 99px;
+    margin-top: 10px;
+}
+
+.how-it-works {
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: center;
+    gap: 30px;
+}
+
+.how-it-works img {
+    width: 71px;
+    height: 170px;
+    object-fit: none;
+ }
+
+.widget img{
+    box-sizing: border-box;
+    object-fit: none;
+    width: 168px;
+    height: 168px;
+
+    background: #FFFFFF;
+    border-radius: 5px;
+    border: 1px solid rgba(249, 128, 75, 1);
+}
+
+.widget p {
+    width: 168px;
+    margin-left: 0;
+    margin-top: 26px;
+}
+
+.peek-and-feed button {
+    display:block;
+    position: relative;
+    margin-top: 45px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0;
+    width: 298px;
+    height: 54px;
 }
