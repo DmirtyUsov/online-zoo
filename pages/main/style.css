@@ -331,13 +331,47 @@ nav ul {
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
 }
+.image {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+.foto-card:hover .image {
+    opacity: 0.3;
+  }
+.middle {
+    position: relative;
+    display: block;
+    transition: .5s ease;
+    opacity: 0;
+    top: -60px;
+    left: 182px;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+.foto-card:hover .middle {
+    opacity: 1;
+  }
+.text {
+    position: relative;
+    background-color:#E47209;
+    backdrop-filter: blur(2px);
+    border-radius: 10px;
+    color: white;
+    font-size: 16px;
+    padding: 16px 32px;
+}
 
 .btn {
     position: relative;
     width: 294px;
     height: 22px;
     left: 16px;
-    top: 5px;
+    top: -47px;
     /* btn. */
     font-family: 'Roboto';
     font-style: normal;
@@ -350,12 +384,13 @@ nav ul {
 
     color: #000000;
 }
+
 .small-paragraph {
     position: relative;
     width: 294px;
     height: 18px;
     left: 15px;
-    top: 3px;
+    top: -50px;
     /* smallParagraph */
     font-family: 'Roboto';
     font-style: normal;
@@ -369,7 +404,7 @@ nav ul {
     position: relative;
     margin: 0;
     left: 321px;
-    top: -33px;
+    top: -81px;
     width: 33px;
     height: 37px;
     background-image: url("/online-zoo/assets/icons/banana-bamboo_icon.png");
@@ -379,7 +414,7 @@ nav ul {
     position: relative;
     margin: 0;
     left: 310px;
-    top: -33px;
+    top: -81px;
     width: 48px;
     height: 38px;
     background-image: url("/online-zoo/assets/icons/meet-fish_icon.png");
