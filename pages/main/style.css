@@ -80,6 +80,43 @@ button:disabled {
     background: #767474;
 }
 
+a {
+    text-decoration: none;
+    color: white;
+}
+a:active {
+    /* selected link */
+    color: orange;
+}
+
+a:hover {
+    color: orange;
+}
+a:focus {
+    color: orange;
+}
+a:target {
+    color: orange;
+}
+
+input {
+    box-sizing: border-box;
+    width: 228px;
+    height: 42px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+    /* or 22px */
+    /* Gray 4 */
+
+    color: #BDBDBD;
+    border: 1px solid #F9804B;
+    border-radius: 2px;
+    padding-left: 10px;
+}
+
 body {
     font-family: 'Roboto';
     background: white;
@@ -99,20 +136,6 @@ header {
     height: 80px;
     background: black;
     backdrop-filter: blur(2px);
-}
-header a {
-    text-decoration: none;
-    color: white;
-}
-header a:active {
-    /* selected link */
-    color: orange;
-}
-header a:focus {
-    color: orange;
-}
-header a:target {
-    color: orange;
 }
 
 .logo {
@@ -496,6 +519,7 @@ nav ul {
     margin-top: 140px;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 179px;
 }
 
 .testimonials h3 {
@@ -623,4 +647,127 @@ nav ul {
     background-image: url("/online-zoo/assets/images/leaf.png");
     transform: matrix(-0.86, -0.5, -0.5, 0.86, 0, 0);
 
+}
+
+/* footer */
+footer {
+    width: 1600px;
+    height: 443px;
+    background: #111115;
+    display: flex;
+    flex-flow: row;
+}
+.footer-left {
+    margin-top: 25px;
+} 
+footer-middle{
+
+}
+.footer-left {
+
+}
+
+#btn_volonteer {
+        display:block;
+        position: relative;
+        top: 69px;
+        left: 221px;
+        width: 298px;
+        height: 54px;
+        border-radius: 5px;
+}
+
+.footer-social {
+    position: relative;
+    display: block;
+    left: 221px;
+    top: 116px;
+}
+.footer-social ul{
+    line-height: 27px;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-social img {
+    display: inline;
+    box-sizing: border-box;
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    background: rgba(196, 196, 196, 0.5);
+    object-fit: contain;
+    padding: 4px 4px;
+    margin-right: 10px;
+}
+.footer-social img:hover {
+    background: #4B9200;
+}
+
+.footer-social a:hover {
+    color: #4B9200;
+}
+
+.footer-social span {
+    top: 20px;
+}
+
+.footer-nav {
+    position: relative;
+    display: block;
+    width: 463px;
+    top: 353px;
+    left: 37px;
+}
+
+.subscribe {
+    position: relative;
+    top: 39px;
+    left: 252px;
+}
+.subscribe h4 {
+    color: white;
+    margin: 0;
+    margin-bottom: 13px;
+}
+
+.subscribe input[type=email] {
+    background: #111115;
+    margin-right: 5px;
+}
+.subscribe button {
+    width: 129px;
+    height: 42px;
+    background: #F1F3F2;
+    /* black_blue */
+
+    border: 1px solid #333B41;
+    border-radius: 5px;
+    color: #000000;
+    text-transform: none;
+}
+.subscribe button:active {
+        color: #4B9200;
+        border: 1px solid #4B9200;
+}
+
+.designed {
+    position: relative;
+    top: 240px;
+    left: 391px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 100;
+    font-size: 16px;
+    line-height: 160%;
+    letter-spacing: -2px;
+
+}
+.designed a{
+    color: #767474;
+}
+.designed a:hover {
+    text-decoration: underline;
+    color: #4B9200;
 }
