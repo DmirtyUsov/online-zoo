@@ -504,6 +504,11 @@ nav ul {
     margin-left: 99px;
     margin-top: 10px;
 }
+.peek-and-feed a {
+    color: #000000;
+    text-decoration: underline;
+    text-decoration-color: orange;
+}
 
 .how-it-works {
     margin-right: auto;
