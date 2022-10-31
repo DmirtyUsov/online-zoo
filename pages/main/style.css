@@ -198,6 +198,9 @@ nav ul {
     font-size: 16px;
     line-height: 140%;
 }
+.active {
+    color: orange;
+}
 
 /* section panda */
 .panda {
@@ -637,6 +640,7 @@ nav ul {
     border-radius: 5px;
 }
 
+/*
 .leaf-photo {
     position: absolute;
     width: 300px;
@@ -647,6 +651,16 @@ nav ul {
     background-image: url("/online-zoo/assets/images/leaf.png");
     transform: matrix(-0.86, -0.5, -0.5, 0.86, 0, 0);
 
+}
+*/
+.leaf-photo {
+    position: absolute;
+    width: 152px;
+    height: 242px;
+    left: 1449px;
+    top: 4286px;
+    background-size: cover;
+    background-image: url("/online-zoo/assets/images/leaf2.png");
 }
 
 /* footer */
