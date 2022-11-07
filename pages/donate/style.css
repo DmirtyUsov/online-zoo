@@ -471,3 +471,130 @@ nav ul {
     text-align: center;
     color: #333B41;
 }
+
+/* footer */
+footer {
+    width: 1600px;
+    height: 443px;
+    background: #111115;
+
+}
+.container-footer {
+    display: flex;
+    margin: 0 auto;
+    width: 1160px;
+    height: 100%;
+}
+.footer-left {
+    margin-top: 39px
+}
+
+footer-middle{
+
+}
+.footer-left {
+
+}
+
+#btn_volonteer {
+        display:block;
+        position: relative;
+        top: 72px;
+        width: 292px;
+        height: 54px;
+        border-radius: 5px;
+}
+
+.footer-social {
+    position: relative;
+    display: block;
+    top: 111px;
+}
+.footer-social ul{
+    line-height: 29px;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-social img {
+    display: inline;
+    box-sizing: border-box;
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    background: rgba(196, 196, 196, 0.5);
+    object-fit: contain;
+    padding: 4px 4px;
+    margin-right: 10px;
+}
+.footer-social img:hover {
+    background: #4B9200;
+}
+
+.footer-social a:hover {
+    color: #4B9200;
+}
+
+.footer-social span {
+    top: 20px;
+}
+
+.footer-nav {
+    position: relative;
+    display: block;
+    width: 425px;
+    top: 355px;
+    left: 35px;
+}
+
+.subscribe {
+    position: relative;
+    top: 42px;
+    left: 66px;
+}
+.subscribe h4 {
+    color: white;
+    margin: 0;
+    margin-bottom: 13px;
+}
+
+.subscribe input[type=email] {
+    background: #111115;
+    margin-right: 5px;
+}
+.subscribe button {
+    width: 129px;
+    height: 42px;
+    background: #F1F3F2;
+    /* black_blue */
+
+    border: 1px solid #333B41;
+    border-radius: 5px;
+    color: #000000;
+    text-transform: none;
+}
+.subscribe button:active {
+        color: #4B9200;
+        border: 1px solid #4B9200;
+}
+
+.designed {
+    position: relative;
+    top: 240px;
+    left: 205px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 100;
+    font-size: 16px;
+    line-height: 160%;
+    letter-spacing: -2px;
+
+}
+.designed a{
+    color: #767474;
+}
+.designed a:hover {
+    text-decoration: underline;
+    color: #4B9200;
+}
