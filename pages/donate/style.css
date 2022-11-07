@@ -391,10 +391,12 @@ nav ul {
     width: 10px;
     height: 10px;
     margin-bottom: 20px;
+    accent-color: #FFEE2E;
 }
 .radio-amount input[type="radio"]:checked + label {
     background-color:#bfb;
     border-color: #4c4;
+    color: orange;
 }
 
 .pick-and-feed input[type="number"] {
@@ -448,7 +450,7 @@ nav ul {
 }
 .radio-subscription input[type="radio"] {
     display: inline;
-
+    accent-color: #4B9200;
     width: 16px;
     height: 16px;
 }
