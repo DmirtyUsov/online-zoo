@@ -349,10 +349,11 @@ nav ul {
     padding-right: 0;
 }
 .radio-amount-bg {
-    width: 938px;
+    width: 918px;
     margin: 0;
     border: 0;
-    padding: 12.5px;
+    padding-top: 12.5px;
+    padding-bottom: 12.5px;
     padding-left: 26px;
     padding-right: 26px;
     height: 2px;
@@ -361,21 +362,21 @@ nav ul {
     background-clip: content-box, padding-box;
     display: flex;
     flex-direction: row;
-    gap: 58px;
     justify-content: space-between;
 }
-.radio-amount-wrap {
-    position: relative;
-    display: inline-block;
-    top: -8px;
-    left: -9px;
+.radio-amount-labels {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 .radio-amount label {
-    display: block;
+    position: relative;
+    top: -44px;
     margin-right: 0;
     margin-right: 0;
     width: 78px;
-    height: 36px;
+    height: 32px;
+    padding-top: 56px;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 500;
@@ -386,13 +387,58 @@ nav ul {
     color: #333B41
 }
 
-.radio-amount input[type="radio"]{
-    display: block;
+.radio-amount input[type="radio"] {
+    -webkit-appearance: none;
+    appearance: none;
+    top: -3px;
+    margin: 0px;
+    padding: 0px;
     width: 10px;
     height: 10px;
-    margin-bottom: 20px;
-    accent-color: #FFEE2E;
+    border: 0;
+    background-color: yellow;
+    font-style: inherit;
+    border-radius: 50%;
+    cursor: pointer;
+    position: relative;
 }
+
+.radio-amount input[type="radio"]:hover{
+    -webkit-appearance: none;
+    appearance: none;
+    margin: 0px;
+    padding: 0px;
+    width: 10px;
+    height: 10px;
+    border: 0;
+    background-color: orange;
+    font-style: inherit;
+    border-radius: 50%;
+    cursor: pointer;
+    position: relative;
+}
+.radio-amount input[type="radio"]:focus::before, .radio-amount input[type="radio"]:focus::after {
+    content: '';
+    top: 50%;
+    left: 50%;
+    background-color: transparent;
+    position: absolute;
+    border-radius: 50%;
+    box-shadow: 0 0 0 2px #FE9013;
+}
+
+.radio-amount input[type="radio"]:focus::before {
+    width: 23px;
+    height: 23px;
+    transform: translate(-50%, -50%);
+  }
+
+.radio-amount input[type="radio"]:focus::after {
+    width: 40px;
+    height: 40px;
+    transform: translate(-50%, -50%);
+}
+
 .radio-amount input[type="radio"]:checked + label {
     background-color:#bfb;
     border-color: #4c4;
@@ -408,7 +454,6 @@ nav ul {
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 0;
-    margin-top: 87px;
     padding-right: 20px;
     background: inherit;
 
