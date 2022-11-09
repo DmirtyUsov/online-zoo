@@ -458,6 +458,10 @@ nav ul {
     background: inherit;
 
 }
+.pick-and-feed input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
 .dollar-sign {
     margin-right: -10px;
     position: absolute;
