@@ -64,13 +64,20 @@ a:target {
     align-items: center;
 
 }
+
+.logo-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-grow: 1;
+}
 .logo {
     text-align: center;
     box-sizing: border-box;
     position: relative;
     width: 82px;
     height: 52px;
-    left: 220px;
+
     margin-top: 14px;
     padding: 3.75px 3.55px;
 
@@ -92,10 +99,11 @@ a:target {
     top: 23.64px;
 }
 
+/* Wrapper for nav */
 nav {
-    position: relative;
-    left: 184px;
-    top: 1px;
+    display: flex;
+    justify-content: flex-start;
+    flex-grow: 1;
 }
 
 nav ul {
@@ -109,14 +117,20 @@ nav ul {
     font-weight: 500;
     font-size: 16px;
     line-height: 140%;
+    padding-inline-start: 3px;
+}
+
+.copyright-wrapper {
+    display: flex;
+    flex-grow: 2;
+    align-items: center;
+    justify-content: center;
 }
 
 .copyright {
-    position: relative;
     width: 105px;
     height: 22px;
-    left: 625px;
-    top: 1px;
+
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
