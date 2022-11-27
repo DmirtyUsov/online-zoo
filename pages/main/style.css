@@ -5,6 +5,17 @@ body {
     max-width: 1600px;
 }
 
+h4 {
+    /* subtitle */
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 120%;
+    /* identical to box height, or 29px */
+    color: #333B41;
+}
+
 a {
     text-decoration: none;
     background: white;
@@ -62,6 +73,45 @@ button:disabled {
     background: #767474;
 }
 
+input {
+    box-sizing: border-box;
+    width: 228px;
+    height: 42px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+    /* or 22px */
+    /* Gray 4 */
+
+    color: #BDBDBD;
+    border: 1px solid #F9804B;
+    border-radius: 2px;
+    padding-left: 10px;
+}
+input[type=email]:active {
+    border: 0.7px solid #4B9200;
+}
+
+input[type=email]:invalid {
+    border: 0.7px solid #D31414;
+}
+
+input[type=submit] {
+    width: 129px;
+    height: 42px;
+    background: #F1F3F2;
+    /* black_blue */
+
+    border: 1px solid #333B41;
+    border-radius: 5px;
+    color: #000000;
+    text-transform: none;
+}
+
+
+/*  */
 .panda-image {
     position: relative;
     width: 100%;
@@ -200,10 +250,179 @@ nav ul {
     line-height: 140%;
 }
 
+.backstage {
+    height: 3752px;
+}
 /* Footer */
 footer {
-    position: relative;
+    height: 443px;
     background: #111115;
-    /* display: flex; */
-    min-height: 100px;
 }
+.footer-container {
+    position: relative;
+    top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.empty-wrapper {
+    border: 1px solid red;
+}
+.empty10, .empty20, .empty30 {
+    flex: 0 20 13.5%;
+}
+.empty12 {
+    flex-basis: 39%;
+    height: 90px;
+}
+
+.empty22 {
+    flex-basis: 55%;
+    height: 110px;
+}
+
+.footer-container .logo-wrapper {
+    display: flex;
+    align-items: flex-start;
+    justify-content: start;
+    border: 1px solid red;
+    flex: 0 0 10%;
+}
+
+.footer-container .logo {
+    margin-top: 0;
+}
+
+#btn_volonteer {
+    width: 298px;
+    height: 54px;
+    border-radius: 5px;
+    align-self: center;
+}
+
+.subscribe {
+    border: 1px solid red;
+    flex: 0 0 380px;
+}
+.subscribe h4 {
+    color: white;
+    margin: 0;
+    margin-bottom: 13px;
+}
+
+.subscribe input[type=email] {
+    background: #111115;
+    margin-right: 5px;
+}
+.subscribe input[type=submit] {
+    color: #4B9200;
+    border: 1px solid #4B9200;
+}
+
+.social-wrapper {
+    border: 1px solid red;
+    flex: 0 10 336px;
+}
+
+.social-wrapper ul {
+    line-height: 29px;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.social-wrapper img {
+    display: inline;
+    box-sizing: border-box;
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    background: rgba(196, 196, 196, 0.5);
+    object-fit: contain;
+    padding: 4px 4px;
+    margin-right: 10px;
+}
+
+.social-wrapper img:hover {
+    background: #4B9200;
+}
+.social-wrapper  a:hover {
+    background: #4B9200;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Wrapper for nav */
+.footer-container .nav-wrapper {
+    flex-basis: 37%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    border: 1px solid red;
+}
+.nav-wrapper ul {
+    margin-bottom: 0;
+}
+
+.designed-wrapper {
+    border: 1px solid red;
+    flex-basis: fit-content;
+    display: flex;
+    justify-content: start;
+    align-items: flex-end;
+}
+
+.designed {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 100;
+    font-size: 16px;
+    line-height: 160%;
+    letter-spacing: -2px;
+    margin: 0;
+
+}
+.designed a {
+    -webkit-text-fill-color: #767474;
+    color: #767474;
+}
+.designed a:hover {
+    color: #4B9200;
+    -webkit-text-fill-color: #4B9200;
+    text-decoration: underline;
+}
+
+/* Media */
+@media (max-width: 1200px) {
+    .empty10, .empty20, .empty30 {
+        flex: 0 40 10.5%;
+    }
+    .social-wrapper {
+        flex: 0 10 229px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .backstage {
+        height: 3554px;
+    }
+    .empty12 {
+        flex-basis: 44%;
+    }
+    .empty10, .empty20, .empty30 {
+        flex: 0 0 2%;
+    }
+    .subscribe {
+        flex: 0 0 400px;
+    }
+    .empty22 {
+        flex-basis: 65%;
+    }
+    .social-wrapper {
+        flex: 0 10 229px;
+    }
+    .footer-container .nav-wrapper {
+        flex-basis: 46%;
+    }
+}
+
