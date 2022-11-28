@@ -323,6 +323,8 @@ nav ul {
 
 .backstage img {
     flex-shrink: 10;
+    max-height: 100%;
+    width: 39vw;
 }
 
 .backstage article {
@@ -353,11 +355,151 @@ nav ul {
     padding: 0 0 100px;
     background: url(../../assets/images/palm.png), url(../../assets/images/strelitzia_rotate.png);
 
-    background-position: -200px 0, right center;
-    background-size: 24% 159%, contain;
+    background-position: 128% 32%, 100% 100%;
+    /* background-size: 24% 159%, contain; */
     background-repeat: no-repeat;
 }
 
+.animals {
+    width: 100%;
+    display: flex;
+    margin-top: 40px;
+    flex-direction: column;
+    align-items: center;
+    gap: 80px;
+}
+
+.animals-cards {
+    max-width: 1160px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px 31px;
+}
+
+.foto-card {
+    box-sizing: border-box;
+    width: 366px;
+    height: 426px;
+    border-radius: 5px;
+    border: 2px solid;
+    border-color: #FE9013;
+    background-color: white;
+    /* TO DO */
+    /* border-image: linear-gradient(113.96deg, #FA6F32 1.49%, #FE9013 101.44%); */
+}
+
+.foto-card img{
+    position: relative;
+    box-sizing: border-box;
+    width: 364px;
+    height: 366px;
+    margin-left: auto;
+    margin-right: auto;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.image {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+
+.foto-card:hover .image {
+    opacity: 0.3;
+}
+
+.middle {
+    position: relative;
+    display: block;
+    transition: .5s ease;
+    opacity: 0;
+    top: -60px;
+    left: 182px;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.foto-card:hover .middle {
+    opacity: 1;
+}
+
+.text {
+    position: relative;
+    background-color:#E47209;
+    backdrop-filter: blur(2px);
+    border-radius: 10px;
+    color: white;
+    font-size: 16px;
+    padding: 16px 32px;
+}
+
+.btn {
+    position: relative;
+    width: 294px;
+    height: 22px;
+    left: 16px;
+    top: -47px;
+    /* btn. */
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 140%;
+    /* or 22px */
+
+    text-transform: uppercase;
+
+    color: #000000;
+}
+
+.small-paragraph {
+    position: relative;
+    width: 294px;
+    height: 18px;
+    left: 15px;
+    top: -50px;
+    /* smallParagraph */
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 120%;
+    /* identical to box height, or 18px */
+    color: #000000;
+}
+.icon-fruits {
+    position: relative;
+    margin: 0;
+    left: 321px;
+    top: -81px;
+    width: 33px;
+    height: 37px;
+    background-image: url(".././assets/icons/banana-bamboo_icon.png");
+    background-repeat: no-repeat;
+}
+.icon-meat {
+    position: relative;
+    margin: 0;
+    left: 310px;
+    top: -81px;
+    width: 48px;
+    height: 38px;
+    background-image: url(".././assets/icons/meet-fish_icon.png");
+    background-repeat: no-repeat;
+}
+
+#btn-choose-your-fav {
+    width: 298px;
+    height: 54px;
+}
 
 /* Footer */
 footer {
