@@ -178,7 +178,6 @@ header {
     height: 80px;
     background: #000000;
     backdrop-filter: blur(2px);
-    border: 1px solid orangered;
 }
 .nav-container {
     position: relative;
@@ -257,8 +256,14 @@ nav ul {
     line-height: 140%;
 }
 
+/* Main */
+
 .backstage {
-    height: 3752px;
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-image: url("../../assets/images/flower_foto1.png");
+    background-size: contain;
+    height: 630px;
 }
 /* Footer */
 footer {
@@ -410,9 +415,6 @@ footer {
 }
 
 @media (max-width: 1000px) {
-    .backstage {
-        height: 3554px;
-    }
     .empty12 {
         flex-basis: 44%;
     }
