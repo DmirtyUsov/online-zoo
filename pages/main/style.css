@@ -356,7 +356,7 @@ nav ul {
     background: url(../../assets/images/palm.png), url(../../assets/images/strelitzia_rotate.png);
 
     background-position: 128% 32%, 100% 100%;
-    /* background-size: 24% 159%, contain; */
+    background-size: auto, auto;
     background-repeat: no-repeat;
 }
 
@@ -494,6 +494,17 @@ nav ul {
     height: 38px;
     background-image: url(".././assets/icons/meet-fish_icon.png");
     background-repeat: no-repeat;
+}
+.arrows {
+    position: absolute;
+    top: calc(35% + 16px);
+    display: flex;
+    gap: calc(75vw);
+}
+.button-arrow {
+    width: 62px;
+    height: 62px;
+    border-radius: 50%;
 }
 
 #btn-choose-your-fav {
