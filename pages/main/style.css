@@ -301,6 +301,8 @@ nav ul {
 
 /* Main */
 
+/* Backstage */
+
 .backstage-bg {
     background-repeat: no-repeat;
     background-position: right center;
@@ -342,6 +344,21 @@ nav ul {
 .backstage p {
     align-self: flex-end;
 }
+
+/* Animals */
+
+.animals-bg {
+    position: relative;
+    width: 100%;
+    padding: 0 0 100px;
+    background: url(../../assets/images/palm.png), url(../../assets/images/strelitzia_rotate.png);
+
+    background-position: -200px 0, right center;
+    background-size: 24% 159%, contain;
+    background-repeat: no-repeat;
+}
+
+
 /* Footer */
 footer {
     height: 443px;
