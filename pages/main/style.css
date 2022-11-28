@@ -526,8 +526,8 @@ nav ul {
     position: relative;
     box-sizing: border-box;
     max-width: 1160px;
-    height: 964px;
     margin: 0 auto;
+    padding-bottom: 170px;
     background: rgba(253, 253, 255, 0.52);
     backdrop-filter: blur(2px);
     /* Note: backdrop-filter has minimal browser support */
@@ -625,6 +625,123 @@ nav ul {
     color: #FFFFFF;
     margin-top: 12px;
     letter-spacing: 0.1px;
+}
+
+/*  testimonials */
+.testimonials-bg {
+    position: relative;
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-image: url(../../assets/images/leaf3.png);
+    background-position: right 126%;
+    background-repeat: no-repeat;
+}
+
+.testimonials-bg h3 {
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 47px;
+}
+
+.testimonials-container {
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    max-width: 1160px;
+    justify-content: center;
+}
+
+.testimonial-card {
+    box-sizing: border-box;
+    width: 266px;
+    height: 391px;
+    background: #F1F3F2;
+    border-radius: 20px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%), linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%);
+}
+
+.testimonial-card img {
+    position: relative;
+    width: 37px;
+    height: 37px;
+    left: 16px;
+    top: 15px;
+    border-radius: 50%;
+
+}
+
+.user-name {
+    position: relative;
+    width: 150px;
+    height: 19px;
+    left: 63px;
+    top: -43px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 120%;
+    /* or 19px */
+    color: #000000;
+}
+
+.user-place {
+    position: relative;
+    width: 97px;
+    height: 19px;
+    left: 63px;
+    top: -60px;
+}
+
+.user-place small {
+    color: #BDBDBD;
+}
+
+.user-dot {
+    position: relative;
+    width: 5px;
+    height: 18px;
+    left: 156px;
+    top: -78px;
+}
+
+.user-dot small {
+    color: #BDBDBD;
+}
+
+.user-date small {
+    color: #BDBDBD;
+}
+
+.user-opinion {
+    position: relative;
+    width: 237px;
+    height: 309px;
+    left: 15px;
+    top: -84px;
+}
+
+.user-opinion small {
+    color: #767474;
+}
+
+#testimonilal-scroll {
+
+    width: 599px;
+    height: 6px;
+    margin: 0;
+
+    background: #F5F7F6;
+    border-radius: 5px;
+}
+#btn-leave-feedback {
+    width: 298px;
+    height: 54px;
+    border-radius: 5px;
 }
 /* Footer */
 footer {
