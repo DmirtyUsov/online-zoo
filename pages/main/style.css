@@ -4,6 +4,26 @@ body {
     margin: 0 auto;
     /* max-width: 1600px; */
 }
+h2 {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 120%;
+    /* or 58px */
+    color: #333B41;
+}
+
+h3 {
+    /* h3 */
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 36px;
+line-height: 130%;
+/* identical to box height, or 47px */
+color: #000000;
+}
 
 h4 {
     /* subtitle */
@@ -14,6 +34,29 @@ h4 {
     line-height: 120%;
     /* identical to box height, or 29px */
     color: #333B41;
+}
+
+p {
+/* body */
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 140%;
+/* or 22px */
+color: #000000;
+}
+
+small {
+    /* smallParagraph */
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 120%;
+    /* identical to box height, or 18px */
+    color: #000000;
 }
 
 a {
@@ -258,12 +301,46 @@ nav ul {
 
 /* Main */
 
-.backstage {
+.backstage-bg {
     background-repeat: no-repeat;
     background-position: right center;
     background-image: url("../../assets/images/flower_foto1.png");
     background-size: contain;
-    height: 630px;
+    height: 682px;
+    display: flex;
+    align-items: center;
+}
+.backstage {
+    position: relative;
+    max-width: 1160px;
+    height: 403px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.backstage img {
+    flex-shrink: 10;
+}
+
+.backstage article {
+    flex-basis: 465px;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+}
+
+.backstage h2 {
+    margin-top: 0;
+    margin-bottom: 0
+}
+
+.backstage h4 {
+    margin: 0;
+}
+
+.backstage p {
+    align-self: flex-end;
 }
 /* Footer */
 footer {
