@@ -512,6 +512,120 @@ nav ul {
     height: 54px;
 }
 
+/* pick and feed */
+.pick-and-feed {
+    position: relative;
+    width: 100%;
+    padding-top: 72px;
+    padding-bottom: 60px;
+
+    background: linear-gradient(315.75deg, rgba(254, 210, 144, 0.7) 30.06%, #FEBDAB 100.95%, rgba(254, 210, 144, 0.7) 106.36%), linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%), linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%);
+}
+
+.pick-and-feed section {
+    position: relative;
+    box-sizing: border-box;
+    max-width: 1160px;
+    height: 964px;
+    margin: 0 auto;
+    background: rgba(253, 253, 255, 0.52);
+    backdrop-filter: blur(2px);
+    /* Note: backdrop-filter has minimal browser support */
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.pick-and-feed section h2 {
+    text-align: center;
+    color: #FE9013;
+    margin-bottom: 6px;
+}
+.pick-and-feed .section-text {
+    box-sizing: border-box;
+    padding: 0 54px 10px 99px;
+}
+.pick-and-feed h4 {
+    text-align: left;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+}
+.pick-and-feed .first-p {
+    margin: 0;
+    padding-top: 28px;
+}
+.pick-and-feed .second-p {
+    margin: 0;
+    padding-top: 10px;
+    padding-right: 10px;
+}
+.pick-and-feed a {
+    -webkit-text-fill-color: #000000;
+    color: #000000;
+
+    text-decoration: underline;
+    text-decoration-color: orange;
+}
+.peek-and-feed h3 {
+    margin-top: 17px;
+    margin-bottom: 25px;
+}
+
+.how-it-works {
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: center;
+    gap: 30px;
+}
+
+.how-it-works img {
+    width: 71px;
+    height: 170px;
+    object-fit: none;
+ }
+
+ .widget img{
+    box-sizing: border-box;
+    object-fit: none;
+    width: 168px;
+    height: 168px;
+
+    background: #FFFFFF;
+    border-radius: 5px;
+    border: 1px solid rgba(249, 128, 75, 1);
+}
+
+.widget p {
+    width: 168px;
+    margin-left: 0;
+    margin-top: 21px;
+}
+#btn-feed-friend {
+    width: 298px;
+    height: 54px;
+    margin-top: 33px;
+}
+/* For donation */
+.pick-and-feed article {
+
+}
+
+.pick-and-feed article h3 {
+    color: #FFFFFF;
+    margin: 0 auto;
+}
+
+.pick-and-feed article p {
+    color: #FFFFFF;
+    margin-top: 12px;
+    letter-spacing: 0.1px;
+}
 /* Footer */
 footer {
     height: 443px;
