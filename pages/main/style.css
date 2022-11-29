@@ -776,16 +776,17 @@ footer {
 }
 .footer-container {
     position: relative;
-    top: 40px;
+    padding-top: 39px;
+    max-width: 1160px;
+    margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
+    border: 1px solid orangered;
 }
 .empty-wrapper {
     border: 1px solid red;
 }
-.empty10, .empty20, .empty30 {
-    flex: 0 20 13.5%;
-}
+
 .empty12 {
     flex-basis: 39%;
     height: 90px;
@@ -801,7 +802,7 @@ footer {
     align-items: flex-start;
     justify-content: start;
     border: 1px solid red;
-    flex: 0 0 10%;
+    flex: 0 0 9%;
 }
 
 .footer-container .logo {
@@ -815,9 +816,14 @@ footer {
     align-self: center;
 }
 
-.subscribe {
+.subscribe-container {
     border: 1px solid red;
-    flex: 0 0 380px;
+    flex: 0 0 90%;
+    display: flex;
+    justify-content: flex-end;
+}
+.subscribe {
+
 }
 .subscribe h4 {
     color: white;
@@ -882,9 +888,9 @@ footer {
 
 .designed-wrapper {
     border: 1px solid red;
-    flex-basis: fit-content;
+    flex-basis: 33%;
     display: flex;
-    justify-content: start;
+    justify-content: end;
     align-items: flex-end;
 }
 
