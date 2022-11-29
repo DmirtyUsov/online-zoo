@@ -919,13 +919,39 @@ footer {
 }
 
 /* Media */
+@media (max-width:1280px) {
 
+    .nav-container, .backstage, .animals-cards, .pick-and-feed section, .testimonials-container, .footer-container {
+        max-width: 940px;
+    }
+
+    .panda-image {
+        aspect-ratio: 1.71;
+        background-position: 0% 0%;
+    }
+
+    .ellipse6 {
+        top: 69px;
+        left: calc(50% - 37vw / 2 + 139.5px);
+        width: 37vw;
+    }
+
+    .panda-image h2 {
+        width: 400.25px;
+        left: calc(50% - 400.25px/2 + 214.12px);
+        top: 122px;
+        font-size: 85px;
+    }
+
+    .panda-image button {
+        left: calc(50% - 298px/2 + 214px);
+        top: 483px;
+    }
+
+}
 @media (max-width: 1000px) {
     .backstage-bg {
         background-image: none;
-    }
-    .nav-container, .backstage, .animals-cards, .pick-and-feed section, .testimonials-container, .footer-container {
-        max-width: 940px;
     }
 }
 
