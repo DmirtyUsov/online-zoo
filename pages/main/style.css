@@ -489,7 +489,7 @@ nav ul {
     top: -81px;
     width: 33px;
     height: 37px;
-    background-image: url(".././assets/icons/banana-bamboo_icon.png");
+    background-image: url("../../assets/icons/banana-bamboo_icon.png");
     background-repeat: no-repeat;
 }
 .icon-meat {
@@ -499,7 +499,7 @@ nav ul {
     top: -81px;
     width: 48px;
     height: 38px;
-    background-image: url(".././assets/icons/meet-fish_icon.png");
+    background-image: url("../../assets/icons/meet-fish_icon.png");
     background-repeat: no-repeat;
 }
 .arrows {
