@@ -362,8 +362,8 @@ nav ul {
     padding: 0 0 100px;
     background: url(../../assets/images/palm.png), url(../../assets/images/strelitzia_rotate.png);
 
-    background-position: 128% 32%, 100% 100%;
-    background-size: auto, auto;
+    background-position: -75% 135%, 100% 100%;
+    background-size: 53% 56%, auto;
     background-repeat: no-repeat;
 }
 
