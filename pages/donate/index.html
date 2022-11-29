@@ -4,27 +4,33 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
-        <link rel="stylesheet" href="./style.css">
+        <link rel="stylesheet" href="../../pages/main/style.css">
         <title>PetStory Online</title>
     </head>
     <body>
         <header>
-            <div class="container-header">
-                <h1 class="logo"><a href="../main/"><img src="/online-zoo/assets/icons/bamboo.png" alt="bamboo">PetStory online</a></h1>
-                <nav>
-                    <ul>
-                        <li><a href="../main/">About</a></li>
-                        <li><a href="../main/">Map</a></li>
-                        <li><a href="../main/">Zoos</a></li>
-                        <li><a href="../donate/" class="active">Donate</a></li>
-                        <li><a href="../main/">Contact us</a></li>
-                    </ul>
-                </nav>
-                <p class="copyright"><a href="https://www.figma.com/file/jfEFwkXVj1WRq7sUHDr8os/PetStory-online">Designed by ©</a></p>
+            <div class="nav-overlay ">
+                <div class="nav-container">
+                    <div class="logo-wrapper">
+                        <h1 class="logo"><a href="../main/"><img src="../../assets/icons/bamboo.png" alt="bamboo">PetStory online</a></h1>
+                    </div>
+                    <nav>
+                        <ul>
+                            <li><a href="../main/">About</a></li>
+                            <li><a href="../main/">Map</a></li>
+                            <li><a href="../main/">Zoos</a></li>
+                            <li><a href="../donate/" class="active">Donate</a></li>
+                            <li><a href="../main/">Contact us</a></li>
+                        </ul>
+                    </nav>
+                    <div class="copyright-wrapper">
+                        <p class="copyright"><a href="https://www.figma.com/file/jfEFwkXVj1WRq7sUHDr8os/PetStory-online">Designed by ©</a></p>
+                    </div>
+                </div>
             </div>
+            <div class="panda-image" id="image-donate"></div>
         </header>
         <main>
-            <div class="panda"></div>
             <div class="pick-and-feed">
                 <article>
                     <h3>THE ZOO HAS OFFICIALLY REOPENED BUT WE STILL NEED YOUR HELP!</h3>
@@ -80,42 +86,45 @@
             </div>
         </main>
         <footer>
-            <div class="container-footer">
-                <div class="footer-left">
-                    <div class="logo"><a href="../main/"><img src="/online-zoo/assets/icons/bamboo.png" alt="bamboo">PetStory online</a></div>
-                    <button id="btn_volonteer">donate for volunteers</button>
-                    <div class="footer-social">
-                        <ul>
-                            <li> <a href="#" class="social-link"><img src="/online-zoo/assets/icons/facebook.png" alt="Facebook" class="social-image"><span>Facebook</span></a></li>
-                            <li> <a href="#" class="social-link"><img src="/online-zoo/assets/icons/twitter.png" alt="Twitter" class="social-image">Twitter</a></li>
-                            <li> <a href="#" class="social-link"><img src="/online-zoo/assets/icons/instagram.png" alt="Instagram" class="social-image">Instagram</a></li>
-                            <li> <a href="#" class="social-link"><img src="/online-zoo/assets/icons/youtube.png" alt="Youtube" class="social-image">YouTube</a></li>
-                        </ul>
-                    </div>
+            <div class="footer-container">
+                <div class="logo-wrapper">
+                    <div class="logo"><a href="../main/"><img src="../../assets/icons/bamboo.png" alt="bamboo">PetStory online</a></div>
                 </div>
-                <div class="footer-middle">
-                    <div class="footer-nav">
-                        <nav>
-                            <ul>
-                                <li><a href="../main/">About</a></li>
-                                <li><a href="../main/">Map</a></li>
-                                <li><a href="../main/">Zoos</a></li>
-                                <li><a href="../main/">Contact us</a></li>
-                            </ul>
-                        </nav>
-                    </div>
-                </div>
-                <div class="footer-right">
-                    <form class="subscribe">
+                <div class="subscribe-container">
+                    <form class="subscribe" id="subscribe">
                         <h4>Subscribe to our news</h4>
-                        <input type="email" placeholder="Enter your email" required>
-                        <button>Submit</button>
+                        <input type="email" placeholder="Enter your email">
+                        <input type="submit" value="Submit">
                     </form>
+                </div>
+                <div class="btn-volonteer-wrapper">
+                    <button id="btn-volonteer">donate for volunteers</button>
+                </div>
+                <div class="social-wrapper">
+                    <ul>
+                        <li> <a href="#"><img src="../../assets/icons/facebook.png" alt="Facebook"><span>Facebook</span></a></li>
+                        <li> <a href="#"><img src="../../assets/icons/twitter.png" alt="Twitter">Twitter</a></li>
+                        <li> <a href="#"><img src="../../assets/icons/instagram.png" alt="Instagram">Instagram</a></li>
+                        <li> <a href="#"><img src="../../assets/icons/youtube.png" alt="Youtube">YouTube</a></li>
+                    </ul>
+                </div>
+                <div class="nav-wrapper">
+                    <nav>
+                        <ul>
+                            <li><a href="../main/">About</a></li>
+                            <li><a href="../main/">Map</a></li>
+                            <li><a href="../main/">Zoos</a></li>
+                            <li><a href="../main/">Contact us</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="designed-wrapper">
                     <div class="designed">
                         <a href="#">
                         <pre>Designed by Alisa Samborskaya
 ©RSSchool & ©Yem Digital 2021</pre></a>
                     </div>
+
                 </div>
             </div>
         </footer>

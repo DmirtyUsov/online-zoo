@@ -166,6 +166,13 @@ header {
     background-size: cover;
     background-position: center center;
 }
+#image-donate {
+    height: 462px;
+    background-image: url("../../assets/images/panda_donate_bg.png");
+    background-size: cover;
+    background-position: center center;
+}
+
 
 .ellipse6 {
     position: absolute;
@@ -314,7 +321,9 @@ nav ul {
     background-position: right center;
     background-image: url("../../assets/images/flower_foto1.png");
     background-size: contain;
-    height: 682px;
+    /* height: 682px; */
+    padding-top: 140px;
+    padding-bottom: 140px;
     display: flex;
     align-items: center;
 }
@@ -330,7 +339,7 @@ nav ul {
 .backstage img {
     flex-shrink: 10;
     max-height: 100%;
-    width: 39vw;
+    width: 38vw;
 }
 
 .backstage article {
@@ -400,8 +409,8 @@ nav ul {
 .foto-card img{
     position: relative;
     box-sizing: border-box;
-    width: 364px;
-    height: 366px;
+    width: 100%;
+    /* height: 366px; */
     margin-left: auto;
     margin-right: auto;
     border-top-left-radius: 5px;
@@ -620,7 +629,9 @@ nav ul {
 }
 /* For donation */
 .pick-and-feed article {
-
+    max-width: 1160px;
+    margin: 0 auto;
+    padding-top: 40px;
 }
 
 .pick-and-feed article h3 {
@@ -632,6 +643,295 @@ nav ul {
     color: #FFFFFF;
     margin-top: 12px;
     letter-spacing: 0.1px;
+}
+
+#donation-info {
+    margin-top: 44px;
+    padding-bottom: 18px;
+    color: rgba(254, 144, 19, 1);
+}
+
+.widget-block {
+    height: 356px;
+    margin: auto;
+    text-align: center;
+}
+.days-amaunt {
+    position: relative;
+    width: 159px;
+    height: 58px;
+    display: inline-block;
+    box-sizing: border-box;
+    left: -41px;
+    top: -5px;
+}
+#days-num {
+    width: 159px;
+    height: 58px;
+    margin: 0;
+    margin-right: 42px;
+    text-align: center;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 72px;
+    line-height: 80%;
+    /* identical to box height, or 58px */
+
+    text-align: center;
+    text-transform: uppercase;
+
+    color: #000000;
+}
+
+#days-tip {
+    position: relative;
+    top: 10px;
+    width: 159px;
+    height: 22px;
+    margin: 0;
+
+    /* body */
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+    /* or 22px */
+
+    text-align: center;
+
+    color: #333B41;
+}
+#x-icon {
+    position: relative;
+    display: inline-block;
+    object-fit: none;
+    width: 14px;
+    height: 14px;
+    top: -43px;
+    left: -34px;
+}
+#animal-widget {
+    position: relative;
+    display: inline-block;
+    object-fit: none;
+    width: 284px;
+    height: 246px;
+    top: 60px;
+    left: 27px;
+}
+.pick-and-feed form {
+    position: relative;
+    max-width: 976px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.radio-amount {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    border: 0;
+    padding-top: 20px;
+    padding-left: 0;
+    padding-right: 0;
+}
+.radio-amount-bg {
+    width: calc(100%-200px);
+    margin: 0;
+    border: 0;
+    padding-top: 12.5px;
+    padding-bottom: 12.5px;
+    padding-left: 26px;
+    padding-right: 26px;
+    height: 2px;
+    border-radius: 2px;
+    background-image: linear-gradient(to bottom, #72828E 0%, #72828E 100%), linear-gradient(to bottom, #404950 0%, #404950 100%);
+    background-clip: content-box, padding-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.radio-amount-labels {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.radio-amount label {
+    position: relative;
+    top: -44px;
+    margin-right: 0;
+    margin-right: 0;
+    width: 78px;
+    height: 32px;
+    padding-top: 56px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 26px;
+    line-height: 140%;
+    /* or 36px */
+    text-transform: uppercase;
+    color: #333B41
+}
+
+.radio-amount input[type="radio"] {
+    -webkit-appearance: none;
+    appearance: none;
+    top: -3px;
+    margin: 0px;
+    padding: 0px;
+    width: 10px;
+    height: 10px;
+    border: 0;
+    background-color: yellow;
+    font-style: inherit;
+    border-radius: 50%;
+    cursor: pointer;
+    position: relative;
+}
+
+.radio-amount input[type="radio"]:hover{
+    -webkit-appearance: none;
+    appearance: none;
+    margin: 0px;
+    padding: 0px;
+    width: 10px;
+    height: 10px;
+    border: 0;
+    background-color: orange;
+    font-style: inherit;
+    border-radius: 50%;
+    cursor: pointer;
+    position: relative;
+}
+.radio-amount input[type="radio"]:focus::before, .radio-amount input[type="radio"]:focus::after {
+    content: '';
+    top: 50%;
+    left: 50%;
+    background-color: transparent;
+    position: absolute;
+    border-radius: 50%;
+    box-shadow: 0 0 0 2px #FE9013;
+}
+
+.radio-amount input[type="radio"]:focus::before {
+    width: 23px;
+    height: 23px;
+    transform: translate(-50%, -50%);
+  }
+
+.radio-amount input[type="radio"]:focus::after {
+    width: 40px;
+    height: 40px;
+    transform: translate(-50%, -50%);
+}
+
+.radio-amount input[type="radio"]:checked + label {
+    background-color:#bfb;
+    border-color: #4c4;
+    color: orange;
+}
+
+.pick-and-feed input[type="number"] {
+    display: block;
+    width: 268px;
+    height: 54px;
+    border: 1px solid #929699;
+    border-radius: 2px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0;
+    padding-right: 20px;
+    background: inherit;
+
+}
+.pick-and-feed input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+.dollar-sign {
+    margin-right: -10px;
+    position: relative;
+    width: 10px;
+    height: 20px;
+    left: 388px;
+    top: 42px;
+    background: inherit;
+}
+.radio-subscription {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 56px;
+    box-sizing: border-box;
+    width: 214px;
+    height: 78px;
+    border: 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0;
+    padding-left: 0;
+    padding-right: 0;
+}
+.radio-subscription label {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+    /* or 22px */
+
+    color: #333B41;
+}
+.radio-subscription input[type="radio"] {
+    -webkit-appearance: none;
+    appearance: none;
+    margin-right: 10px;
+    width: 16px;
+    height: 16px;
+    right: 1px;
+    background-color: transparent;
+    box-shadow: 0 0 0 0px #FE9013;
+    font-style: inherit;
+    border-radius: 50%;
+    cursor: pointer;
+    position: relative;
+}
+
+.radio-subscription input[type="radio"]:checked::before {
+    content: "";
+    width: 11px;
+    height: 12px;
+    border-radius: 50%;
+    transition: 120ms transform ease-in-out;
+    box-shadow: inset 10px 10px #FE9013;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(15%, -50%);
+  }
+  
+
+#button-feed {
+    display:block;
+    position: relative;
+    left: 1px;
+    margin-top: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0;
+    width: 298px;
+    height: 54px;
+}
+#share {
+    display: block;
+    margin: 0 auto;
+    margin-top: 29px;
+    text-align: center;
+    color: #333B41;
 }
 
 /*  testimonials */
@@ -840,7 +1140,7 @@ footer {
 
 
 .social-wrapper {
-    border: 1px solid red;
+    /* border: 1px solid red; */
     flex: 0 10 24%;
 }
 
@@ -880,14 +1180,14 @@ footer {
     display: flex;
     justify-content: center;
     align-items: flex-end;
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 .nav-wrapper ul {
     margin-bottom: 0;
 }
 
 .designed-wrapper {
-    border: 1px solid red;
+    /* border: 1px solid red; */
     flex: 5 5 25%;
     display: flex;
     justify-content: end;
@@ -921,7 +1221,7 @@ footer {
 /* Media */
 @media (max-width:1280px) {
 
-    .nav-container, .backstage, .animals-cards, .pick-and-feed section, .testimonials-container, .footer-container {
+    .nav-container, .backstage, .animals-cards, .pick-and-feed section, .pick-and-feed article, .testimonials-container, .footer-container {
         max-width: 940px;
     }
 
@@ -948,6 +1248,17 @@ footer {
         top: 483px;
     }
 
+    .backstage {
+        height: 408px;
+    }
+
+    .backstage img {
+        width: 46vw;
+    }
+    .foto-card {
+        width: 294px;
+        height: 354px;
+    }
 }
 @media (max-width: 1000px) {
     .backstage-bg {
