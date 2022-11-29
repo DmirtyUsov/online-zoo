@@ -2,7 +2,6 @@ body {
     font-family: 'Roboto';
     background: white;
     margin: 0 auto;
-    /* max-width: 1600px; */
 }
 h2 {
     font-family: 'Roboto';
@@ -841,8 +840,8 @@ footer {
 
 
 .social-wrapper {
-    /* border: 1px solid red; */
-    flex: 0 10 336px;
+    border: 1px solid red;
+    flex: 0 10 24%;
 }
 
 .social-wrapper ul {
@@ -877,19 +876,19 @@ footer {
 
 /* Wrapper for nav */
 .footer-container .nav-wrapper {
-    flex-basis: 37%;
+    flex: 10 10 40%;
     display: flex;
     justify-content: center;
     align-items: flex-end;
-    /* border: 1px solid red; */
+    border: 1px solid red;
 }
 .nav-wrapper ul {
     margin-bottom: 0;
 }
 
 .designed-wrapper {
-    /* border: 1px solid red; */
-    flex-basis: 33%;
+    border: 1px solid red;
+    flex: 5 5 25%;
     display: flex;
     justify-content: end;
     align-items: flex-end;
@@ -920,33 +919,13 @@ footer {
 }
 
 /* Media */
-@media (max-width: 1200px) {
-    .empty10, .empty20, .empty30 {
-        flex: 0 40 10.5%;
-    }
-    .social-wrapper {
-        flex: 0 10 229px;
-    }
-}
 
 @media (max-width: 1000px) {
-    .empty12 {
-        flex-basis: 44%;
+    .backstage-bg {
+        background-image: none;
     }
-    .empty10, .empty20, .empty30 {
-        flex: 0 0 2%;
-    }
-    .subscribe {
-        flex: 0 0 400px;
-    }
-    .empty22 {
-        flex-basis: 65%;
-    }
-    .social-wrapper {
-        flex: 0 10 229px;
-    }
-    .footer-container .nav-wrapper {
-        flex-basis: 46%;
+    .nav-container, .backstage, .animals-cards, .pick-and-feed section, .testimonials-container, .footer-container {
+        max-width: 940px;
     }
 }
 
