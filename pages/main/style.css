@@ -283,6 +283,13 @@ nav ul {
     padding-inline-start: 3px;
 }
 
+.active {
+    background: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
 .copyright-wrapper {
     display: flex;
     flex-grow: 2;
@@ -517,7 +524,7 @@ nav ul {
     position: relative;
     width: 100%;
     padding-top: 72px;
-    padding-bottom: 60px;
+    padding-bottom: 99px;
 
     background: linear-gradient(315.75deg, rgba(254, 210, 144, 0.7) 30.06%, #FEBDAB 100.95%, rgba(254, 210, 144, 0.7) 106.36%), linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%), linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%);
 }
@@ -527,7 +534,7 @@ nav ul {
     box-sizing: border-box;
     max-width: 1160px;
     margin: 0 auto;
-    padding-bottom: 170px;
+    padding-bottom: 60px;
     background: rgba(253, 253, 255, 0.52);
     backdrop-filter: blur(2px);
     /* Note: backdrop-filter has minimal browser support */
@@ -569,9 +576,10 @@ nav ul {
     text-decoration: underline;
     text-decoration-color: orange;
 }
-.peek-and-feed h3 {
-    margin-top: 17px;
-    margin-bottom: 25px;
+.pick-and-feed h3 {
+    /* margin-top: 41px;
+    margin-bottom: 28px; */
+    padding-top: 0px;
 }
 
 .how-it-works {
@@ -609,7 +617,7 @@ nav ul {
 #btn-feed-friend {
     width: 298px;
     height: 54px;
-    margin-top: 33px;
+    margin-top: 40px;
 }
 /* For donation */
 .pick-and-feed article {
@@ -631,24 +639,24 @@ nav ul {
 .testimonials-bg {
     position: relative;
     width: 100%;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: 140px;
+    padding-bottom: 180px;
     background-image: url(../../assets/images/leaf3.png);
-    background-position: right 126%;
+    background-position: 110% 126%;
     background-repeat: no-repeat;
 }
 
 .testimonials-bg h3 {
     text-align: center;
-    margin-top: 0;
-    margin-bottom: 47px;
+    margin: 0;
+    padding-bottom: 45px;
 }
 
 .testimonials-container {
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
-    gap: 30px;
+    gap: 20px 30px;
     max-width: 1160px;
     justify-content: center;
 }
@@ -713,10 +721,17 @@ nav ul {
     color: #BDBDBD;
 }
 
+.user-date {
+    position: relative;
+    width: 41px;
+    height: 18px;
+    left: 166px;
+    top: -97px;
+}
+
 .user-date small {
     color: #BDBDBD;
 }
-
 .user-opinion {
     position: relative;
     width: 237px;
@@ -729,6 +744,11 @@ nav ul {
     color: #767474;
 }
 
+.testimonial-scroll-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
 #testimonilal-scroll {
 
     width: 599px;
@@ -737,6 +757,12 @@ nav ul {
 
     background: #F5F7F6;
     border-radius: 5px;
+}
+.testimonial-feedback-wrapper {
+    width: 100%;
+    padding-top: 14px;
+    display: flex;
+    justify-content: flex-start;
 }
 #btn-leave-feedback {
     width: 298px;
@@ -750,16 +776,17 @@ footer {
 }
 .footer-container {
     position: relative;
-    top: 40px;
+    padding-top: 39px;
+    max-width: 1160px;
+    margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
+    border: 1px solid orangered;
 }
 .empty-wrapper {
     border: 1px solid red;
 }
-.empty10, .empty20, .empty30 {
-    flex: 0 20 13.5%;
-}
+
 .empty12 {
     flex-basis: 39%;
     height: 90px;
@@ -775,7 +802,7 @@ footer {
     align-items: flex-start;
     justify-content: start;
     border: 1px solid red;
-    flex: 0 0 10%;
+    flex: 0 0 9%;
 }
 
 .footer-container .logo {
@@ -789,9 +816,14 @@ footer {
     align-self: center;
 }
 
-.subscribe {
+.subscribe-container {
     border: 1px solid red;
-    flex: 0 0 380px;
+    flex: 0 0 90%;
+    display: flex;
+    justify-content: flex-end;
+}
+.subscribe {
+
 }
 .subscribe h4 {
     color: white;
@@ -856,9 +888,9 @@ footer {
 
 .designed-wrapper {
     border: 1px solid red;
-    flex-basis: fit-content;
+    flex-basis: 33%;
     display: flex;
-    justify-content: start;
+    justify-content: end;
     align-items: flex-end;
 }
 
