@@ -444,7 +444,6 @@ nav ul {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border: 1px solid red;
 }
 
 .text {
@@ -482,14 +481,16 @@ nav ul {
     color: #000000;
 }
 .foto-card-icons {
-    width: 33px;
-    height: 37px;
     background-repeat: no-repeat;
 }
 .icon-fruits {
+    width: 33px;
+    height: 37px;
     background-image: url("../../assets/icons/banana-bamboo_icon.png");
 }
 .icon-meat {
+    width: 48px;
+    height: 38px;
     background-image: url("../../assets/icons/meet-fish_icon.png");
 }
 .arrows {
