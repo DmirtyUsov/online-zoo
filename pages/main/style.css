@@ -395,6 +395,7 @@ nav ul {
 }
 
 .foto-card-wrapper {
+    position: relative;
     box-sizing: border-box;
     width: 366px;
     height: 426px;
@@ -409,14 +410,24 @@ nav ul {
     height: inherit;
 }
 
-.foto-card:hover {
+.middle {
+    position: absolute;
+    height: auto;
+    top: 50%;
+    left: 50%;
+    transition: .5s ease;
+    opacity: 0;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%)
+}
+
+.foto-card-wrapper:hover .foto-card{
     opacity: 0.3;
 }
 
-.foto-card:hover .middle {
+.foto-card-wrapper:hover .middle {
     opacity: 1;
 }
-
 
 .foto-card img{
     position: relative;
@@ -436,22 +447,11 @@ nav ul {
     border: 1px solid red;
 }
 
-.middle {
-    transition: .5s ease;
-    opacity: 0.5;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%)
-}
-
 .text {
-    /* position: absolute;
+    text-transform: uppercase;
     background-color:#E47209;
     backdrop-filter: blur(2px);
     border-radius: 10px;
-    color: white;
-    font-size: 16px;
-    padding: 16px 32px; */
-    background-color: #4CAF50;
     color: white;
     font-size: 16px;
     padding: 16px 32px;
