@@ -1261,6 +1261,12 @@ footer {
         width: 46vw;
     }
 
+    .animals-bg {
+        background-size: 42% 34%, 24%;
+        background-position: -36% 119%, 100% 100%;
+        padding: 0 0 144px;
+    }
+
     .animals-cards {
         gap: 14px 29px;
     }
@@ -1276,6 +1282,10 @@ footer {
         order: 2;
         gap: calc(17vw);
         justify-content: center;
+    }
+
+    .pick-and-feed {
+        padding-top: 29px;
     }
 }
 @media (max-width: 1000px) {
