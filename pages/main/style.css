@@ -1332,6 +1332,18 @@ footer {
         display: none;
     }
 
+    .footer-container {
+        gap: 9px 4px;
+    }
+
+    .subscribe-container {
+        flex: 0 0 87%;
+    }
+
+    .social-wrapper ul {
+        padding-top: 2px;
+    }
+
 }
 @media (max-width: 1000px) {
     .backstage-bg {
