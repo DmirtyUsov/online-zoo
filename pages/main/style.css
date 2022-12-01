@@ -955,6 +955,7 @@ nav ul {
 }
 
 .testimonial-card {
+    position: relative;
     box-sizing: border-box;
     width: 266px;
     height: 391px;
@@ -962,7 +963,7 @@ nav ul {
     border-radius: 20px;
     border-style: solid;
     border-width: 1px;
-    border-color: linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%), linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%);
+    border-image: linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%), linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%);
 }
 
 .testimonial-card img {
@@ -1308,6 +1309,27 @@ footer {
 
     #btn-feed-friend {
         margin-top: 56px;
+    }
+    .testimonials-bg {
+        padding-top: 102px;
+        padding-bottom: 140px;
+        background-position: 114% 115%;
+        background-size: 29%;
+    }
+
+    .testimonials-bg h3{
+        padding-bottom: 29px;
+    }
+
+    .testimonial-card {
+        width: 293px;
+    }
+
+    .testimonial-feedback-wrapper {
+        padding-top: 33px;
+    }
+    .testimonial-card4 {
+        display: none;
     }
 
 }
