@@ -1286,7 +1286,30 @@ footer {
 
     .pick-and-feed {
         padding-top: 29px;
+        padding-bottom: 50px;
     }
+    .pick-and-feed section {
+        gap: 4px;
+        padding-bottom: 50px;
+    }
+
+    .pick-and-feed .section-text {
+        padding: 0 37px 0px 52px;
+    }
+
+    .pick-and-feed section h2 {
+        margin-top: 31px;
+        margin-bottom: 2px;
+    }
+
+    .pick-and-feed .first-p {
+        padding-top: 5px;
+    }
+
+    #btn-feed-friend {
+        margin-top: 56px;
+    }
+
 }
 @media (max-width: 1000px) {
     .backstage-bg {
