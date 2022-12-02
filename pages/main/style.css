@@ -625,7 +625,7 @@ color: #FFFFFF;
     gap: 30px;
 }
 
-.how-it-works img {
+.arrow-right-1 {
     width: 71px;
     height: 170px;
     object-fit: none;
@@ -1386,7 +1386,7 @@ footer {
     .nav-container,
     .backstage,
     .animals-cards,
-    .pick-and-feed section,
+    /* .pick-and-feed section, */
     .pick-and-feed article,
     .testimonials-container,
     .footer-container {
@@ -1516,5 +1516,44 @@ footer {
         gap:calc(5vw);
     }
 
+    .pick-and-feed {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .pick-and-feed section{
+        padding-bottom: 60px;
+    }
+
+    .pick-and-feed .section-text {
+        padding: 0 7px 0px 16px;
+    }
+
+    .pick-and-feed section h2 {
+        font-size: 42px;
+        margin-top: 10px;
+    }
+    .pick-and-feed h4 {
+        font-size: 22px;
+        margin-top: 15px;
+        margin-bottom: 14px;
+    }
+
+    .pick-and-feed h3 {
+        margin-top: 22px;
+        margin-bottom: 13px;
+    }
+
+    .how-it-works {
+        gap: 0px 43px;
+    }
+
+    .arrow-right-1 {
+        display: none;
+    }
+
+    #btn-feed-friend {
+        margin-top: 27px;
+    }
 
 }
