@@ -242,7 +242,6 @@ header {
     justify-content: flex-start;
 }
 .logo {
-    text-align: center;
     box-sizing: border-box;
     position: relative;
     width: 82px;
@@ -269,13 +268,39 @@ header {
     top: 23.64px;
 }
 
+.logo-small {
+    display: none;
+    box-sizing: border-box;
+    position: relative;
+    width: 47px;
+    height: 29px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12.2899px;
+    line-height: 120%;
+    /* or 15px */
+
+    text-align: center;
+
+color: #FFFFFF;
+}
+.logo-small img {
+    position: absolute;
+    width: 4.54px;
+    height: 13.56px;
+    left: 5.23px;
+    top: 10.64px;
+}
 /* Wrapper for nav */
-nav {
+#nav-bottom,
+#nav-top{
     display: flex;
     justify-content: flex-start;
 }
 
-nav ul {
+#nav-bottom ul,
+#nav-top ul {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -287,6 +312,10 @@ nav ul {
     font-size: 16px;
     line-height: 140%;
     padding-inline-start: 3px;
+}
+
+.toggle-nav-top {
+    display: none;
 }
 
 .active {
@@ -1345,9 +1374,72 @@ footer {
     }
 
 }
-@media (max-width: 1000px) {
+@media (max-width:1000px) {
     .backstage-bg {
         background-image: none;
     }
 }
 
+@media (max-width:640px) {
+    .nav-container,
+    .backstage,
+    .animals-cards,
+    .pick-and-feed section,
+    .pick-and-feed article,
+    .testimonials-container,
+    .footer-container {
+        max-width: 600px;
+    }
+
+    .nav-overlay {
+        height: 34px;
+        position: fixed;
+    }
+
+    #logo-top,
+    #nav-top,
+    .copyright-wrapper {
+        display: none;
+    }
+    .nav-container {
+        justify-content: space-between;
+    }
+
+    .toggle-nav-top {
+        display: block;
+    }
+
+    .logo-small {
+        display: block;
+    }
+
+    .panda-image {
+        aspect-ratio: 1.675;
+        background-position: 0% 0%;
+    }
+
+    .ellipse6 {
+        top: 44px;
+        left: calc(50% - 224.6px/2 + 130.44px);
+        width: 37vw;
+    }
+
+    .panda-image h2 {
+        width: 255px;
+        left: calc(50% - 241px/2 + 176.76px);
+        top: 84px;
+        font-weight: 700;
+        font-size: 54.2894px;
+        line-height: 75%;
+    }
+    
+    .panda-image strong {
+        letter-spacing: 1px;
+    }
+
+    .panda-image button {
+        left: calc(50% - 284px/2 - 151px);
+        top: 279px;
+    }
+
+}
