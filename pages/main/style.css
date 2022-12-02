@@ -1432,7 +1432,7 @@ footer {
         font-size: 54.2894px;
         line-height: 75%;
     }
-    
+
     .panda-image strong {
         letter-spacing: 1px;
     }
@@ -1441,5 +1441,21 @@ footer {
         left: calc(50% - 284px/2 - 151px);
         top: 279px;
     }
+
+    .backstage-bg{
+        padding-top: 60px;
+        padding-bottom: 0px;
+        background-image: url("../../assets/images/flower_foto1.png");
+        background-position: 110% 50%;
+    }
+
+    .backstage {
+        height: 408px;
+    }
+
+    .backstage img {
+        display: none;
+    }
+
 
 }
