@@ -521,6 +521,7 @@ color: #FFFFFF;
     color: #000000;
 }
 .foto-card-icons {
+    background-size: contain;
     background-repeat: no-repeat;
 }
 .icon-fruits {
@@ -552,6 +553,7 @@ color: #FFFFFF;
 
 /* pick and feed */
 .pick-and-feed {
+    font-size: ;
     position: relative;
     width: 100%;
     padding-top: 72px;
@@ -1445,6 +1447,7 @@ footer {
     .backstage-bg{
         padding-top: 60px;
         padding-bottom: 0px;
+        padding-left: 20px;
         background-image: url("../../assets/images/flower_foto1.png");
         background-position: 110% 50%;
     }
@@ -1455,6 +1458,62 @@ footer {
 
     .backstage img {
         display: none;
+    }
+
+    .animals {
+        gap: 61px;
+        padding-left: 8px;
+    }
+
+    .animals-bg {
+        padding: 0 0 100px;
+        background-size: 50% 37%, 27%;
+        background-position: -64% 124%, 103% 100%;
+    }
+
+    .animals-cards {
+        gap: 14px 11px;
+        justify-content: space-between;
+    }
+
+    .foto-card-wrapper {
+        width: 285px;
+        height: 332px;
+    }
+
+    .foto-card3 {
+        order: 3;
+    }
+
+    .foto-card5,
+    .foto-card6 {
+        display: none;
+    }
+
+    .foto-card-description {
+        padding: 3px 13px 0 9px;
+    }
+
+    .btn {
+        font-size: 13px;
+    }
+
+    .small-paragraph {
+        font-size: 11px;
+    }
+
+    .icon-fruits {
+        width: 25px;
+        height: 28px;
+    }
+
+    .icon-meat {
+        width: 37px;
+        height: 29px;
+    }
+
+    .arrows {
+        gap:calc(5vw);
     }
 
 
