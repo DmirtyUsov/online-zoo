@@ -1386,7 +1386,7 @@ footer {
     }
 }
 
-@media (max-width:640px) {
+@media all and (max-width:640px) {
     .nav-container,
     .backstage,
     .animals-cards,
@@ -1585,6 +1585,21 @@ footer {
 
     #btn-leave-feedback {
         width: 240px;
+    }
+
+    footer {
+        height: 282px;
+    }
+
+    .footer-container {
+        padding-top: 13px;
+    }
+
+    .subscribe-container {
+        display: none;
+    }
+    .btn-volonteer-wrapper {
+        width:fit-content ;
     }
 
 }
