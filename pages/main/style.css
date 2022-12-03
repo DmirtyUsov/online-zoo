@@ -1280,7 +1280,7 @@ footer {
         left: calc(50% - 298px/2 + 214px);
         top: 483px;
     }
-    
+
     .backstage-bg{
         padding-top: 108px;
         padding-bottom: 112px;
@@ -1386,7 +1386,7 @@ footer {
     }
 }
 
-@media all and (max-width:640px) {
+@media (max-width:640px){
     .nav-container,
     .backstage,
     .animals-cards,
