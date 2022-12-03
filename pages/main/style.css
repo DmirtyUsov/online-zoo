@@ -1673,7 +1673,7 @@ footer {
     .pick-and-feed section {
         padding-bottom: 41px;
     }
-    
+
     .pick-and-feed section h2 {
         font-size: 24px;
         margin-top: 21px;
@@ -1701,5 +1701,24 @@ footer {
 
     #btn-feed-friend {
         margin-top: 11px;
+    }
+
+    .testimonials-bg {
+        padding-top: 30px;
+        padding-bottom: 60px;
+        background-position: 114% 107%;
+    }
+
+    .testimonials-bg h3 {
+        font-size: 24px;
+        padding-bottom: 18px;
+    }
+
+    .testimonials-container {
+        gap: 15px 30px;
+    }
+
+    .testimonial-feedback-wrapper {
+        padding-top: 14px;
     }
 }
