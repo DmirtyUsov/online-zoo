@@ -1280,7 +1280,7 @@ footer {
         left: calc(50% - 298px/2 + 214px);
         top: 483px;
     }
-    
+
     .backstage-bg{
         padding-top: 108px;
         padding-bottom: 112px;
@@ -1386,7 +1386,7 @@ footer {
     }
 }
 
-@media all and (max-width:640px) {
+@media (max-width:640px){
     .nav-container,
     .backstage,
     .animals-cards,
@@ -1420,19 +1420,19 @@ footer {
     }
 
     .panda-image {
-        aspect-ratio: 1.675;
+        aspect-ratio: 1.709;
         background-position: 0% 0%;
     }
 
     .ellipse6 {
         top: 44px;
-        left: calc(50% - 224.6px/2 + 130.44px);
+        left: calc(50% - 237.6px/2 + 130.44px);
         width: 37vw;
     }
 
     .panda-image h2 {
         width: 255px;
-        left: calc(50% - 241px/2 + 176.76px);
+        left: calc(50% - 258px/2 + 176.76px);
         top: 84px;
         font-weight: 700;
         font-size: 54.2894px;
@@ -1444,16 +1444,16 @@ footer {
     }
 
     .panda-image button {
-        left: calc(50% - 284px/2 - 151px);
+        left: calc(50% - 298px/2 - 151px);
         top: 279px;
     }
 
     .backstage-bg{
         padding-top: 60px;
         padding-bottom: 0px;
-        padding-left: 20px;
+        padding-left: 8px;
         background-image: url("../../assets/images/flower_foto1.png");
-        background-position: 110% 50%;
+        background-position: 105% 50%;
     }
 
     .backstage {
@@ -1466,13 +1466,12 @@ footer {
 
     .animals {
         gap: 61px;
-        padding-left: 8px;
     }
 
     .animals-bg {
         padding: 0 0 100px;
         background-size: 50% 37%, 27%;
-        background-position: -64% 124%, 103% 100%;
+        background-position: -64% 124%, 100% 100%;
     }
 
     .animals-cards {
@@ -1562,8 +1561,8 @@ footer {
 
     .testimonials-bg {
         padding-top: 62px;
-        padding-bottom: 74px;
-        background-position: 118% 114%;
+        padding-bottom: 80px;
+        background-position: 115% 115%;
     }
 
     .testimonials-container {
@@ -1581,6 +1580,7 @@ footer {
 
     .testimonial-feedback-wrapper {
         justify-content: center;
+        padding-top: 25px;
     }
 
     #btn-leave-feedback {
