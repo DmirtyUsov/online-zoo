@@ -1638,4 +1638,37 @@ footer {
         top: 241px;
     }
 
+    .backstage-bg {
+        padding-top: 105px;
+        padding-bottom: 0px;
+        background-position: 117% 12%;
+        background-size: 23% 45%;
+    }
+
+    .backstage {
+        height: 387px;
+    }
+
+    .backstage h2 {
+        font-size: 24px;
+    }
+
+    .animals-bg {
+        padding: 0 0 60px;
+        background-size: 28% 18%, 27%;
+        background-position: -16% 114%, 107% 100%;
+    }
+
+    .animals {
+        gap: 20px;
+    }
+
+    .animals-cards {
+        gap: 20px 11px;
+    }
+
+    .arrows {
+        display: none;
+    }
+
 }
