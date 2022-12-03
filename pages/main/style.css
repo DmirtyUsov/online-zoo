@@ -1670,5 +1670,36 @@ footer {
     .arrows {
         display: none;
     }
+    .pick-and-feed section {
+        padding-bottom: 41px;
+    }
+    
+    .pick-and-feed section h2 {
+        font-size: 24px;
+        margin-top: 21px;
+    }
+    .pick-and-feed .section-text {
+        padding: 0 0 0 0;
+    }
 
+    .pick-and-feed h4 {
+        font-size: 18px;
+        text-align: center;
+        margin-top: 4px;
+        margin-bottom: 14px;
+    }
+
+    .first-p,
+    .second-p {
+        display: none;
+    }
+    .pick-and-feed h3 {
+        margin-top: 3px;
+        margin-bottom: 13px;
+        font-size: 24px;
+    }
+
+    #btn-feed-friend {
+        margin-top: 11px;
+    }
 }
