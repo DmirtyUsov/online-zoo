@@ -242,7 +242,6 @@ header {
     justify-content: flex-start;
 }
 .logo {
-    text-align: center;
     box-sizing: border-box;
     position: relative;
     width: 82px;
@@ -269,13 +268,39 @@ header {
     top: 23.64px;
 }
 
+.logo-small {
+    display: none;
+    box-sizing: border-box;
+    position: relative;
+    width: 47px;
+    height: 29px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12.2899px;
+    line-height: 120%;
+    /* or 15px */
+
+    text-align: center;
+
+color: #FFFFFF;
+}
+.logo-small img {
+    position: absolute;
+    width: 4.54px;
+    height: 13.56px;
+    left: 5.23px;
+    top: 10.64px;
+}
 /* Wrapper for nav */
-nav {
+#nav-bottom,
+#nav-top{
     display: flex;
     justify-content: flex-start;
 }
 
-nav ul {
+#nav-bottom ul,
+#nav-top ul {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -287,6 +312,10 @@ nav ul {
     font-size: 16px;
     line-height: 140%;
     padding-inline-start: 3px;
+}
+
+.toggle-nav-top {
+    display: none;
 }
 
 .active {
@@ -404,7 +433,6 @@ nav ul {
     border-color: #FE9013;
 }
 .foto-card {
-    
     opacity: 1;
     transition: .5s ease;
     height: inherit;
@@ -492,6 +520,7 @@ nav ul {
     color: #000000;
 }
 .foto-card-icons {
+    background-size: contain;
     background-repeat: no-repeat;
 }
 .icon-fruits {
@@ -523,6 +552,7 @@ nav ul {
 
 /* pick and feed */
 .pick-and-feed {
+    font-size: ;
     position: relative;
     width: 100%;
     padding-top: 72px;
@@ -594,7 +624,7 @@ nav ul {
     gap: 30px;
 }
 
-.how-it-works img {
+.arrow-right-1 {
     width: 71px;
     height: 170px;
     object-fit: none;
@@ -956,6 +986,7 @@ nav ul {
 
 .testimonial-card {
     position: relative;
+    overflow: hidden;
     box-sizing: border-box;
     width: 266px;
     height: 391px;
@@ -1032,6 +1063,7 @@ nav ul {
     height: 309px;
     left: 15px;
     top: -84px;
+    color: #767474;
 }
 
 .user-opinion small {
@@ -1345,9 +1377,229 @@ footer {
     }
 
 }
-@media (max-width: 1000px) {
+@media (max-width:1000px) {
     .backstage-bg {
         background-image: none;
     }
+    #testimonilal-scroll {
+        width: 40vw;
+    }
 }
 
+@media all and (max-width:640px) {
+    .nav-container,
+    .backstage,
+    .animals-cards,
+    /* .pick-and-feed section, */
+    .pick-and-feed article,
+    .testimonials-container,
+    .footer-container {
+        max-width: 600px;
+    }
+
+    .nav-overlay {
+        height: 34px;
+        position: fixed;
+    }
+
+    #logo-top,
+    #nav-top,
+    .copyright-wrapper {
+        display: none;
+    }
+    .nav-container {
+        justify-content: space-between;
+    }
+
+    .toggle-nav-top {
+        display: block;
+    }
+
+    .logo-small {
+        display: block;
+    }
+
+    .panda-image {
+        aspect-ratio: 1.675;
+        background-position: 0% 0%;
+    }
+
+    .ellipse6 {
+        top: 44px;
+        left: calc(50% - 224.6px/2 + 130.44px);
+        width: 37vw;
+    }
+
+    .panda-image h2 {
+        width: 255px;
+        left: calc(50% - 241px/2 + 176.76px);
+        top: 84px;
+        font-weight: 700;
+        font-size: 54.2894px;
+        line-height: 75%;
+    }
+
+    .panda-image strong {
+        letter-spacing: 1px;
+    }
+
+    .panda-image button {
+        left: calc(50% - 284px/2 - 151px);
+        top: 279px;
+    }
+
+    .backstage-bg{
+        padding-top: 60px;
+        padding-bottom: 0px;
+        padding-left: 20px;
+        background-image: url("../../assets/images/flower_foto1.png");
+        background-position: 110% 50%;
+    }
+
+    .backstage {
+        height: 408px;
+    }
+
+    .backstage img {
+        display: none;
+    }
+
+    .animals {
+        gap: 61px;
+        padding-left: 8px;
+    }
+
+    .animals-bg {
+        padding: 0 0 100px;
+        background-size: 50% 37%, 27%;
+        background-position: -64% 124%, 103% 100%;
+    }
+
+    .animals-cards {
+        gap: 14px 11px;
+        justify-content: space-between;
+    }
+
+    .foto-card-wrapper {
+        width: 285px;
+        height: 332px;
+    }
+
+    .foto-card3 {
+        order: 3;
+    }
+
+    .foto-card5,
+    .foto-card6 {
+        display: none;
+    }
+
+    .foto-card-description {
+        padding: 3px 13px 0 9px;
+    }
+
+    .btn {
+        font-size: 13px;
+    }
+
+    .small-paragraph {
+        font-size: 11px;
+    }
+
+    .icon-fruits {
+        width: 25px;
+        height: 28px;
+    }
+
+    .icon-meat {
+        width: 37px;
+        height: 29px;
+    }
+
+    .arrows {
+        gap:calc(5vw);
+    }
+
+    .pick-and-feed {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .pick-and-feed section{
+        padding-bottom: 60px;
+    }
+
+    .pick-and-feed .section-text {
+        padding: 0 7px 0px 16px;
+    }
+
+    .pick-and-feed section h2 {
+        font-size: 42px;
+        margin-top: 10px;
+    }
+    .pick-and-feed h4 {
+        font-size: 22px;
+        margin-top: 15px;
+        margin-bottom: 14px;
+    }
+
+    .pick-and-feed h3 {
+        margin-top: 22px;
+        margin-bottom: 13px;
+    }
+
+    .how-it-works {
+        gap: 0px 43px;
+    }
+
+    .arrow-right-1 {
+        display: none;
+    }
+
+    #btn-feed-friend {
+        margin-top: 27px;
+    }
+
+    .testimonials-bg {
+        padding-top: 62px;
+        padding-bottom: 74px;
+        background-position: 118% 114%;
+    }
+
+    .testimonials-container {
+        gap: 14px 30px;
+    }
+
+    .testimonial-card {
+        width: 100%;
+        height: 109px;
+    }
+
+    .testimonial-scroll-wrapper {
+        display: none;
+    }
+
+    .testimonial-feedback-wrapper {
+        justify-content: center;
+    }
+
+    #btn-leave-feedback {
+        width: 240px;
+    }
+
+    footer {
+        height: 282px;
+    }
+
+    .footer-container {
+        padding-top: 13px;
+    }
+
+    .subscribe-container {
+        display: none;
+    }
+    .btn-volonteer-wrapper {
+        width:fit-content ;
+    }
+
+}
