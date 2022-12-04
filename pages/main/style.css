@@ -551,7 +551,6 @@ color: #FFFFFF;
 
 /* pick and feed */
 .pick-and-feed {
-    font-size: ;
     position: relative;
     width: 100%;
     padding-top: 72px;
@@ -654,7 +653,7 @@ color: #FFFFFF;
 .pick-and-feed article {
     max-width: 1160px;
     margin: 0 auto;
-    padding-top: 40px;
+    margin-top: -29px;
 }
 
 .pick-and-feed article h3 {
@@ -670,7 +669,7 @@ color: #FFFFFF;
 
 #donation-info {
     margin-top: 44px;
-    padding-bottom: 18px;
+    padding-bottom: 60px;
     color: rgba(254, 144, 19, 1);
 }
 
@@ -748,21 +747,20 @@ color: #FFFFFF;
 }
 .pick-and-feed form {
     position: relative;
-    max-width: 976px;
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
 }
 .radio-amount {
     position: relative;
-    width: 100%;
+    width: calc(58vw);
     margin: 0 auto;
     border: 0;
-    padding-top: 20px;
     padding-left: 0;
     padding-right: 0;
 }
 .radio-amount-bg {
-    width: calc(100%-200px);
+    width: calc(58vw);
     margin: 0;
     border: 0;
     padding-top: 12.5px;
@@ -781,6 +779,7 @@ color: #FFFFFF;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    height: 44px;
 }
 .radio-amount label {
     position: relative;
@@ -858,6 +857,12 @@ color: #FFFFFF;
     color: orange;
 }
 
+.another-amount-wrapper {
+    width: 268px;
+    height: 54px;
+    margin: 0 auto;
+    padding-bottom: 20px;
+}
 .pick-and-feed input[type="number"] {
     display: block;
     width: 268px;
@@ -876,11 +881,8 @@ color: #FFFFFF;
     margin: 0;
   }
 .dollar-sign {
-    margin-right: -10px;
     position: relative;
-    width: 10px;
-    height: 20px;
-    left: 388px;
+    left: 246px;
     top: 42px;
     background: inherit;
 }
@@ -1385,6 +1387,16 @@ footer {
     #testimonilal-scroll {
         width: 40vw;
     }
+
+        /* Donate */
+    .radio-amount,
+    .radio-amount-bg {
+        width: calc(70vw);
+    }
+    label[for="5000"]
+    {
+        display:none;
+    }
 }
 
 @media (max-width:640px){
@@ -1604,7 +1616,6 @@ footer {
         width:fit-content ;
     }
 
-
     .social-wrapper {
         flex: 0 9 35%;
         
@@ -1620,6 +1631,16 @@ footer {
 
     #nav-bottom ul {
         text-indent: 46px;
+    }
+
+    /* Donate */
+    .radio-amount,
+    .radio-amount-bg {
+        width: calc(91vw);
+    }
+    label[for="2000"]
+    {
+        display:none;
     }
 }
 
@@ -1787,5 +1808,13 @@ footer {
         text-indent: 26px;
     }
 
-
+    /* Donate */
+    .radio-amount,
+    .radio-amount-bg {
+        width: calc(78vw);
+    }
+    label[for="1000"]
+    {
+        display:none;
+    }
 }
