@@ -1393,6 +1393,8 @@ footer {
     .radio-amount-bg {
         width: calc(70vw);
     }
+
+    [id="5000"],
     label[for="5000"]
     {
         display:none;
@@ -1618,7 +1620,6 @@ footer {
 
     .social-wrapper {
         flex: 0 9 35%;
-        
     }
 
     .social-wrapper ul {
@@ -1638,6 +1639,7 @@ footer {
     .radio-amount-bg {
         width: calc(91vw);
     }
+    [id="2000"],
     label[for="2000"]
     {
         display:none;
@@ -1813,6 +1815,8 @@ footer {
     .radio-amount-bg {
         width: calc(78vw);
     }
+
+    [id="1000"],
     label[for="1000"]
     {
         display:none;
