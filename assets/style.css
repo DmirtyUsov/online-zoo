@@ -986,6 +986,23 @@ color: #FFFFFF;
     justify-content: center;
 }
 
+.testimonials-carousel {
+    overflow: auto;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+}
+.testimonials-carousel::-webkit-scrollbar {
+    height: 0;
+}
+
+.testimonials-content {
+    display: grid;
+    grid-gap: 26px;
+    grid-auto-flow: column;
+    margin: auto;
+    box-sizing: border-box;
+}
+
 .testimonial-card {
     position: relative;
     overflow: hidden;
@@ -1364,9 +1381,6 @@ footer {
     .testimonial-feedback-wrapper {
         padding-top: 33px;
     }
-    .testimonial-card4 {
-        display: none;
-    }
 
     .footer-container {
         gap: 9px 4px;
@@ -1585,7 +1599,10 @@ footer {
     .testimonials-container {
         gap: 14px 30px;
     }
-
+    .testimonials-content {
+        grid-auto-flow: row;
+        height: 388px;
+    }
     .testimonial-card {
         width: 100%;
         height: 109px;
