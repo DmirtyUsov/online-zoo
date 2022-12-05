@@ -542,6 +542,7 @@ color: #FFFFFF;
     width: 62px;
     height: 62px;
     border-radius: 50%;
+    cursor: pointer;
 }
 
 #btn-choose-your-fav {
