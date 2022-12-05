@@ -59,10 +59,11 @@ const setWhen1280px = (param) => {
             .setAttribute('max', 7);
     }
 }
+
 window.matchMedia('(max-width: 1280px)').addEventListener('change', setWhen1280px);
 document.getElementsByClassName('toggle-nav-top')[0].addEventListener("click", toggleTopMenu);
 document.getElementById('cover').addEventListener("click", toggleTopMenu);
+// only for main
 document.getElementById('button-arrow-left').addEventListener("click", slideAnimals);
 document.getElementById('button-arrow-right').addEventListener("click", slideAnimals);
-
 document.getElementById('testimonilal-scroll').addEventListener("input", slideTestimonials);
