@@ -7,6 +7,7 @@ const animalsInfo = [
         icon: 'icon-fruits'
     }
 ]
+let is640pxORless = ((window.innerWidth < 641) ? true : false);
 
 let valueTestimonialScroll = 0;
 
@@ -60,10 +61,37 @@ const setWhen1280px = (param) => {
     }
 }
 
+const setWhen640px = (param) => {
+    if (param.matches) { // less or equal 640px
+        is640pxORless = true;
+    }
+    else {
+        is640pxORless = false;
+    }
+    document.getElementById('popup').classList.remove('open-popup');
+}
+
+const togglePopup = (event) => {
+    console.log(event.currentTarget, event.target.style.cursor);
+    event.stopPropagation();
+    document.getElementsByClassName('testimonial-popup-content')[0]
+        .querySelector('div')
+        .innerHTML = event.currentTarget.innerHTML;
+    if (is640pxORless) {
+        document.getElementById('popup').classList.toggle('open-popup');
+    }
+}
+
 window.matchMedia('(max-width: 1280px)').addEventListener('change', setWhen1280px);
+window.matchMedia('(max-width: 640px)').addEventListener('change', setWhen640px);
 document.getElementsByClassName('toggle-nav-top')[0].addEventListener("click", toggleTopMenu);
 document.getElementById('cover').addEventListener("click", toggleTopMenu);
 // only for main
 document.getElementById('button-arrow-left').addEventListener("click", slideAnimals);
 document.getElementById('button-arrow-right').addEventListener("click", slideAnimals);
 document.getElementById('testimonilal-scroll').addEventListener("input", slideTestimonials);
+document
+    .querySelectorAll('.testimonial-card')
+    .forEach(card => {card.addEventListener('click', togglePopup)});
+document.getElementsByClassName('close-popup')[0].addEventListener('click', togglePopup);
+document.getElementsByClassName('testimonial-popup')[0].addEventListener('click', togglePopup);
