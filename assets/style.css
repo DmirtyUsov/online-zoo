@@ -415,12 +415,11 @@ header {
 
 .animals-cards {
     max-width: 1160px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    gap: 20px 31px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-column-gap: 30px;
+    grid-row-gap: 20px;
 }
 
 .foto-card-wrapper {
@@ -537,7 +536,8 @@ header {
     position: absolute;
     top: calc(35% + 16px);
     display: flex;
-    gap: calc(75vw);
+    width: 81vw;
+    justify-content: space-between;
 }
 .button-arrow {
     width: 62px;
@@ -1363,21 +1363,18 @@ footer {
         padding: 0 0 144px;
     }
 
+    .arrows {
+        width: 294px;
+        top: calc(33% + 16px);
+    }
     .animals-cards {
-        gap: 14px 29px;
+        grid-column-gap: 29px;
+        grid-row-gap: 92px;
     }
 
     .foto-card-wrapper {
         width: 294px;
         height: 354px;
-    }
-
-    .arrows {
-        width: 100%;
-        position: unset;
-        order: 2;
-        gap: calc(17vw);
-        justify-content: center;
     }
 
     .pick-and-feed {
@@ -1547,8 +1544,7 @@ footer {
     }
 
     .animals-cards {
-        gap: 14px 11px;
-        justify-content: space-between;
+        grid-template-columns: 1fr 1fr;
     }
 
     .foto-card-wrapper {
@@ -1768,9 +1764,9 @@ footer {
     }
 
     .animals-cards {
-        gap: 20px 11px;
+        grid-template-columns: 1fr;
+        grid-row-gap: 20px;
     }
-
     .arrows {
         display: none;
     }
