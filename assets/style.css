@@ -412,6 +412,10 @@ header {
     align-items: center;
     gap: 80px;
 }
+.animals-carousel {
+    overflow: hidden;
+    transition: 1s;
+}
 
 .animals-cards {
     max-width: 1160px;
@@ -435,17 +439,6 @@ header {
     opacity: 1;
     transition: .5s ease;
     height: inherit;
-}
-
-.foto-card1,
-.foto-card2,
-.foto-card3 {
-    order: 1;
-}
-.foto-card4,
-.foto-card5,
-.foto-card6 {
-    order: 3;
 }
 
 .middle {
@@ -1544,6 +1537,7 @@ footer {
     }
 
     .animals-cards {
+        height: 762px;
         grid-template-columns: 1fr 1fr;
     }
 
@@ -1552,14 +1546,14 @@ footer {
         height: 332px;
     }
 
-    .foto-card3 {
+    /* .foto-card3 {
         order: 3;
     }
 
     .foto-card5,
     .foto-card6 {
         display: none;
-    }
+    } */
 
     .foto-card-description {
         padding: 3px 13px 0 9px;
@@ -1764,6 +1758,7 @@ footer {
     }
 
     .animals-cards {
+        height: 1300px;
         grid-template-columns: 1fr;
         grid-row-gap: 20px;
     }

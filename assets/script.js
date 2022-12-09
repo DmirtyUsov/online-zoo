@@ -5,8 +5,44 @@ const animalsInfo = [
         btn: 'Giant pandas',
         small: 'Native to Southwest China',
         icon: 'icon-fruits'
-    }
+    },
+    {
+        img: '../../assets/images/eagle.jpg',
+        alt: 'Eagle',
+        btn: 'Eagles',
+        small: 'Native to South America',
+        icon: 'icon-meat'
+    },
+    {
+        img: '../../assets/images/gorilla.jpg',
+        alt: 'Gorilla',
+        btn: 'Gorillas',
+        small: 'Native to Congo',
+        icon: 'icon-fruits'
+    },
+    {
+        img: '../../assets/images/sloth.jpg',
+        alt: 'Sloth',
+        btn: 'Tow-toed Sloth',
+        small: 'Mesoamerica, South America',
+        icon: 'icon-fruits'
+    },
+    {
+        img: '../../assets/images/cheetahs.jpg',
+        alt: 'Cheetahs',
+        btn: 'Cheetahs',
+        small: 'Native to Africa',
+        icon: 'icon-meat'
+    },
+    {
+        img: '../../assets/images/pinguins.jpg',
+        alt: 'Pinguins',
+        btn: 'Pinguins',
+        small: 'Native to Antarctica',
+        icon: 'icon-meat'
+    },
 ]
+
 let is640pxORless = ((window.innerWidth < 641) ? true : false);
 
 let valueTestimonialScroll = 0;
@@ -20,13 +56,51 @@ function toggleTopMenu(event) {
     document.getElementById('cover').classList.toggle('covering');
 }
 
+const createFotoCard = (idx) => {
+    return `
+        <div class="foto-card-wrapper">
+            <div class="foto-card">
+                <img src="${animalsInfo[idx].img}" alt="${animalsInfo[idx].alt}">
+                <div class="foto-card-description">
+                    <div>
+                        <div class="btn">${animalsInfo[idx].btn}</div>
+                        <div class="small-paragraph">${animalsInfo[idx].small}</div>
+                    </div>
+                    <div class="foto-card-icons ${animalsInfo[idx].icon}"></div>
+                </div>
+            </div>
+        </div>
+    `
+}
+
+const createAnimalsCards = () => {
+    const totalFotoCards = 6;
+    let idxAnimalsInfo = Array.from(Array(animalsInfo.length).keys());
+    idxAnimalsInfo.sort(() => Math.random() - 0.5) // shuffle
+    let divAnimalsCards = document.createElement('div');
+    divAnimalsCards.classList.add('animals-cards');
+    for(let idx=0; idx < totalFotoCards; idx++) {
+        divAnimalsCards.insertAdjacentHTML('beforeend', createFotoCard(idxAnimalsInfo[idx]));
+    }
+    return divAnimalsCards;
+}
+
 const slideAnimals = (event) => {
     console.log('Slide animals', event.srcElement.id);
+    let carousel = document.querySelector('.animals-carousel');
     switch (event.srcElement.id) {
-        case '': 
-
+        case 'button-arrow-right':
+            carousel.append(createAnimalsCards());
+            carousel.firstElementChild.remove();
+            console.log('right')
+            break;
+        case 'button-arrow-left':
+            carousel.prepend(createAnimalsCards());
+            carousel.lastElementChild.remove();
+            console.log('left')
+            break;
     }
-    document.getElementsByClassName('animals-card')[0].scrollBy(300,0);
+    document.getElementsByClassName('animals-cards')[0].scrollBy(500,0);
 }
 
 const slideTestimonials = (event) => {
