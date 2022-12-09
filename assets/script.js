@@ -161,11 +161,33 @@ window.matchMedia('(max-width: 640px)').addEventListener('change', setWhen640px)
 document.getElementsByClassName('toggle-nav-top')[0].addEventListener("click", toggleTopMenu);
 document.getElementById('cover').addEventListener("click", toggleTopMenu);
 // only for main
-document.getElementById('button-arrow-left').addEventListener("click", slideAnimals);
-document.getElementById('button-arrow-right').addEventListener("click", slideAnimals);
-document.getElementById('testimonilal-scroll').addEventListener("input", slideTestimonials);
-document
-    .querySelectorAll('.testimonial-card')
-    .forEach(card => {card.addEventListener('click', togglePopup)});
-document.getElementsByClassName('close-popup')[0].addEventListener('click', togglePopup);
-document.getElementsByClassName('testimonial-popup')[0].addEventListener('click', togglePopup);
+try {
+    document.getElementById('button-arrow-left').addEventListener("click", slideAnimals);
+    document.getElementById('button-arrow-right').addEventListener("click", slideAnimals);
+    document.getElementById('testimonilal-scroll').addEventListener("input", slideTestimonials);
+    document
+        .querySelectorAll('.testimonial-card')
+        .forEach(card => {card.addEventListener('click', togglePopup)});
+    document.getElementsByClassName('close-popup')[0].addEventListener('click', togglePopup);
+    document.getElementsByClassName('testimonial-popup')[0].addEventListener('click', togglePopup);
+}
+catch(e) {
+    console.log(e);
+}
+// only Donate
+document.getElementsByClassName('radio-amount-bg')[0]
+    .querySelectorAll('input')
+    .forEach(radio => radio.addEventListener('change',
+                                            (event) => {document
+                                                    .getElementById('donate-input')
+                                                    .value = event.currentTarget.value}));
+const updateRadio = (event) => {
+    const elemInput = event.currentTarget;
+    const newValue = elemInput.value.slice(0, elemInput.dataset.maxlength);
+    document
+        .getElementsByClassName('radio-amount-bg')[0]
+        .querySelectorAll('input')
+        .forEach(radio => radio.checked = (radio.value === newValue));
+}
+
+document.getElementById('donate-input').addEventListener('input', updateRadio);

@@ -824,7 +824,10 @@ header {
     cursor: pointer;
     position: relative;
 }
-.radio-amount input[type="radio"]:focus::before, .radio-amount input[type="radio"]:focus::after {
+.radio-amount input[type="radio"]:checked::before,
+.radio-amount input[type="radio"]:checked::after,
+.radio-amount input[type="radio"]:focus::before,
+.radio-amount input[type="radio"]:focus::after {
     content: '';
     top: 50%;
     left: 50%;
@@ -834,19 +837,21 @@ header {
     box-shadow: 0 0 0 2px #FE9013;
 }
 
+.radio-amount input[type="radio"]:checked::before,
 .radio-amount input[type="radio"]:focus::before {
     width: 23px;
     height: 23px;
     transform: translate(-50%, -50%);
   }
 
+.radio-amount input[type="radio"]:checked::after,
 .radio-amount input[type="radio"]:focus::after {
     width: 40px;
     height: 40px;
     transform: translate(-50%, -50%);
 }
 
-.radio-amount input[type="radio"]:checked + label {
+.radio-amount input[type="radio"]:checked label {
     background-color:#bfb;
     border-color: #4c4;
     color: orange;
