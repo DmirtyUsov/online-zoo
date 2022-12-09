@@ -63,7 +63,7 @@
                                 <input id="1000" type="radio" name="amount" value="1000">
                                 <input id="500" type="radio" name="amount" value="500">
                                 <input id="250" type="radio" name="amount" value="250">
-                                <input id="100" type="radio" name="amount" value="100">
+                                <input id="100" type="radio" name="amount" value="100" checked>
                                 <input id="50" type="radio" name="amount" value="50">
                             </div>
                             <div class="radio-amount-labels">
@@ -78,7 +78,7 @@
                         </fieldset>
                         <div class="another-amount-wrapper ">
                             <img src="../../assets/icons/dollar.png" alt="dollar" class="dollar-sign">
-                            <input type="number" name="another-amount" placeholder="Another amount" max="9999">
+                            <input type="number" name="another-amount" placeholder="Another amount" max="9999" value="100" id="donate-input">
                         </div>
                         <fieldset class="radio-subscription">
                             <label><input id="monthly" type="radio" name="subscription" value="monthly">Monthly</label>
@@ -95,7 +95,8 @@
         <footer>
             <div class="footer-container">
                 <div class="logo-wrapper">
-                    <div class="logo"><a href="../main/"><img src="../../assets/icons/bamboo.png" alt="bamboo">PetStory online</a></div>
+                    <div class="logo"><a href="../main/"><img src="../../assets/icons/bamboo.png" alt="bamboo">PetStory
+                            online</a></div>
                 </div>
                 <div class="subscribe-container">
                     <form class="subscribe" id="subscribe">
@@ -109,14 +110,18 @@
                 </div>
                 <div class="social-wrapper">
                     <ul>
-                        <li> <a href="#"><img src="../../assets/icons/facebook.png" alt="Facebook"><span>Facebook</span></a></li>
-                        <li> <a href="#"><img src="../../assets/icons/twitter.png" alt="Twitter"><span>Twitter</span></a></li>
-                        <li> <a href="#"><img src="../../assets/icons/instagram.png" alt="Instagram"><span>Instagram</span></a></li>
-                        <li> <a href="#"><img src="../../assets/icons/youtube.png" alt="Youtube"><span>YouTube</span></a></li>
+                        <li> <a href="#"><img src="../../assets/icons/facebook.png" alt="Facebook"><span>Facebook</span></a>
+                        </li>
+                        <li> <a href="#"><img src="../../assets/icons/twitter.png" alt="Twitter"><span>Twitter</span></a>
+                        </li>
+                        <li> <a href="#"><img src="../../assets/icons/instagram.png"
+                                    alt="Instagram"><span>Instagram</span></a></li>
+                        <li> <a href="#"><img src="../../assets/icons/youtube.png" alt="Youtube"><span>YouTube</span></a>
+                        </li>
                     </ul>
                 </div>
                 <div class="nav-wrapper">
-                    <nav id="nav-bottom">
+                    <nav class="nav-bottom">
                         <ul>
                             <li><a href="../main/">About</a></li>
                             <li><a href="../main/">Map</a></li>
@@ -128,10 +133,11 @@
                 <div class="designed-wrapper">
                     <div class="designed">
                         <a href="#">
-                        <pre>Designed by Alisa Samborskaya
-©RSSchool & ©Yem Digital 2021</pre></a>
+                            <pre>Designed by Alisa Samborskaya
+    ©RSSchool & ©Yem Digital 2021</pre>
+                        </a>
                     </div>
-
+    
                 </div>
             </div>
         </footer>

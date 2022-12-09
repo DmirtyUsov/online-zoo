@@ -412,15 +412,18 @@ header {
     align-items: center;
     gap: 80px;
 }
+.animals-carousel {
+    overflow: hidden;
+    transition: 1s;
+}
 
 .animals-cards {
     max-width: 1160px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    gap: 20px 31px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-column-gap: 30px;
+    grid-row-gap: 20px;
 }
 
 .foto-card-wrapper {
@@ -436,17 +439,6 @@ header {
     opacity: 1;
     transition: .5s ease;
     height: inherit;
-}
-
-.foto-card1,
-.foto-card2,
-.foto-card3 {
-    order: 1;
-}
-.foto-card4,
-.foto-card5,
-.foto-card6 {
-    order: 3;
 }
 
 .middle {
@@ -537,7 +529,8 @@ header {
     position: absolute;
     top: calc(35% + 16px);
     display: flex;
-    gap: calc(75vw);
+    width: 81vw;
+    justify-content: space-between;
 }
 .button-arrow {
     width: 62px;
@@ -831,7 +824,10 @@ header {
     cursor: pointer;
     position: relative;
 }
-.radio-amount input[type="radio"]:focus::before, .radio-amount input[type="radio"]:focus::after {
+.radio-amount input[type="radio"]:checked::before,
+.radio-amount input[type="radio"]:checked::after,
+.radio-amount input[type="radio"]:focus::before,
+.radio-amount input[type="radio"]:focus::after {
     content: '';
     top: 50%;
     left: 50%;
@@ -841,19 +837,21 @@ header {
     box-shadow: 0 0 0 2px #FE9013;
 }
 
+.radio-amount input[type="radio"]:checked::before,
 .radio-amount input[type="radio"]:focus::before {
     width: 23px;
     height: 23px;
     transform: translate(-50%, -50%);
   }
 
+.radio-amount input[type="radio"]:checked::after,
 .radio-amount input[type="radio"]:focus::after {
     width: 40px;
     height: 40px;
     transform: translate(-50%, -50%);
 }
 
-.radio-amount input[type="radio"]:checked + label {
+.radio-amount input[type="radio"]:checked label {
     background-color:#bfb;
     border-color: #4c4;
     color: orange;
@@ -1363,21 +1361,18 @@ footer {
         padding: 0 0 144px;
     }
 
+    .arrows {
+        width: 294px;
+        top: calc(33% + 16px);
+    }
     .animals-cards {
-        gap: 14px 29px;
+        grid-column-gap: 29px;
+        grid-row-gap: 92px;
     }
 
     .foto-card-wrapper {
         width: 294px;
         height: 354px;
-    }
-
-    .arrows {
-        width: 100%;
-        position: unset;
-        order: 2;
-        gap: calc(17vw);
-        justify-content: center;
     }
 
     .pick-and-feed {
@@ -1547,8 +1542,8 @@ footer {
     }
 
     .animals-cards {
-        gap: 14px 11px;
-        justify-content: space-between;
+        height: 762px;
+        grid-template-columns: 1fr 1fr;
     }
 
     .foto-card-wrapper {
@@ -1556,14 +1551,14 @@ footer {
         height: 332px;
     }
 
-    .foto-card3 {
+    /* .foto-card3 {
         order: 3;
     }
 
     .foto-card5,
     .foto-card6 {
         display: none;
-    }
+    } */
 
     .foto-card-description {
         padding: 3px 13px 0 9px;
@@ -1768,9 +1763,10 @@ footer {
     }
 
     .animals-cards {
-        gap: 20px 11px;
+        height: 1300px;
+        grid-template-columns: 1fr;
+        grid-row-gap: 20px;
     }
-
     .arrows {
         display: none;
     }
